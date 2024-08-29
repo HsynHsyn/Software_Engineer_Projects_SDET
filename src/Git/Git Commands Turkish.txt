@@ -1,0 +1,77 @@
+Git, sürüm kontrolü ve işbirlikçi yazılım geliştirme için kullanılan popüler bir araçtır.
+ Git'i etkili bir şekilde kullanabilmek için bilmeniz gereken en temel komutlar şunlardır:
+
+1. git init
+Yeni bir Git deposu başlatmak için kullanılır. Bu komut, çalıştığınız dizinde .git adlı bir alt dizin oluşturur ve burada Git'in çalışması için gerekli tüm dosyalar tutulur.
+Örnek: git init
+2. git clone
+Var olan bir Git deposunu kopyalamak için kullanılır. Genellikle bir URL'den uzaktaki bir depoyu yerel bilgisayarınıza indirmek için kullanılır.
+Örnek: git clone https://github.com/user/repository.git
+3. git status
+Çalışma dizinindeki değişikliklerin durumunu görmek için kullanılır. Hangi dosyaların değiştirildiğini, hangilerinin sahneye eklendiğini ve hangilerinin izlenmediğini gösterir.
+Örnek: git status
+4. git add
+Çalışma dizinindeki değişiklikleri sahneye eklemek için kullanılır. Bu komutla belirli dosyalar ya da tüm dosyalar sahneye eklenebilir.
+Örnek: git add dosya.txt
+Tüm dosyalar için: git add .
+5. git commit
+Sahneye eklenen değişiklikleri kalıcı hale getirmek ve bir versiyon oluşturmak için kullanılır. Genellikle bir mesajla birlikte kullanılır.
+Örnek: git commit -m "Mesajınız burada"
+6. git push
+Yerel depo değişikliklerini uzak bir depoya göndermek için kullanılır.
+Örnek: git push origin branch-ismi
+7. git pull
+Uzak bir depodaki en son değişiklikleri yerel depoya indirmek ve birleştirmek için kullanılır.
+Örnek: git pull origin branch-ismi
+8. git branch
+Mevcut dalları listelemek, yeni bir dal oluşturmak veya dalları silmek için kullanılır.
+Örnek: git branch (mevcut dalları listeler)
+Yeni bir dal oluşturmak: git branch yeni-dal
+9. git checkout
+Başka bir dal üzerine geçmek veya belirli bir commit'e geçiş yapmak için kullanılır.
+Örnek: git checkout branch-ismi
+10. git merge
+Bir dalın değişikliklerini mevcut dalınıza birleştirmek için kullanılır.
+Örnek: git merge branch-ismi
+11. git log
+Depodaki commit geçmişini görmek için kullanılır. Hangi değişikliklerin ne zaman yapıldığını ve kim tarafından yapıldığını gösterir.
+Örnek: git log
+12. git revert
+Belirli bir commit'i geri almak için kullanılır. Bu komut, mevcut durumu geri alarak yeni bir commit oluşturur.
+Örnek: git revert commit-hash
+13. git reset
+Commit geçmişini değiştirmek veya çalışma dizinini temizlemek için kullanılır. Kullanımına bağlı olarak farklı etkilere sahiptir (--soft, --mixed, --hard gibi).
+Örnek: git reset --hard commit-hash
+14. git stash
+Çalışma dizinindeki değişiklikleri geçici olarak saklamak ve çalışma dizinini temizlemek için kullanılır. Stash'lenmiş değişiklikler daha sonra geri alınabilir.
+Örnek: git stash
+15. git remote
+Uzak depoları yönetmek için kullanılır. Hangi uzak depoların bağlı olduğunu görmek ve yeni bir uzak depo eklemek için kullanılabilir.
+Örnek: git remote -v (mevcut uzak depoları listeler)
+Bu komutlar Git'in temel işlevlerini yerine getirmek için en çok kullanılanlardır ve Git ile çalışırken sıkça karşılaşılan senaryolarda kullanışlıdır.
+
+
+
+
+
+Şunu dedin:
+Bunlari bir liste halinde yazarmisin
+ChatGPT:
+ChatGPT
+Tabii! İşte en çok kullanılan Git komutlarının listesi:
+
+git init
+git clone
+git status
+git add
+git commit
+git push
+git pull
+git branch
+git checkout
+git merge
+git log
+git revert
+git reset
+git stash
+git remote

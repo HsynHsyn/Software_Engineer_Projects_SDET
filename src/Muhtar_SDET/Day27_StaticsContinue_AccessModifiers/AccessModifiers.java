@@ -1,0 +1,56 @@
+package Muhtar_SDET.Day27_StaticsContinue_AccessModifiers;
+
+public class AccessModifiers {
+
+    /*
+    Access Modifiers:	public > protected > default > private (accessible level )
+     */
+
+    public static int publicData = 200; // accessible in same class
+                                        // accessible in same package
+                                        // always accessible in different package
+
+    protected static int protectedData = 300; // accessible in same class
+                                              // accessible in same package
+                                                // not always accessible  in different package , sometimes can access in subclass
+
+    static int defaultDate = 400;   // this is default, default does not have access modifier
+                                    // accessible in same class
+                                    // accessible in same package
+                                   // not accessible in different package
+
+    private static int privateData = 500; // only visible within class
+                                            // not accessible in different class (encapsulation)
+                                             // not accessible in different packages
+
+    public AccessModifiers(){
+
+    }
+
+    public static void publicMethod(){
+        System.out.println("public");
+    }
+    protected static void protectedMethod(){
+        System.out.println("protected");
+    }
+    static void defaultMethod(){
+        System.out.println("Default");
+    }
+    private static void privateMethod(){
+        System.out.println("private");
+    }
+
+
+
+    public static void main(String[] args) {
+        System.out.println(publicData);
+        System.out.println(protectedData);
+
+        new AccessModifiers();
+
+        publicMethod();
+        protectedMethod();
+        defaultMethod();
+        privateMethod();
+    }
+}

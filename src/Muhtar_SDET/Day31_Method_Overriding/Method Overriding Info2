@@ -1,0 +1,32 @@
+Method Overriding
+- Method overriding allows a child class to provide a specific implementation of a method
+- Giving different implementations to the method
+- One method having multiple different implementations
+
+Question : How many method we have after overriding ?
+
+- Overriding a method must take place in subclass
+- Less memory usage and Improves the reusability of our code
+- changing body of the method in different objects
+- one class gives an implementation just one
+- *** Method Overriding implements just in inheritance
+- Depends on the subclasses
+- Constructors can not be overridden why ? (constructor can not be inherited
+- *** overloading creates different method overloading creates same method (just give implementation)
+- *** overloading with in the same class, Overriding in the different class
+
+Method Overriding Rules
+• Must happen in the sub class
+• Return type, method name and parameters of the overridden method must be same
+• *** Access modifier of the overridden method needs to be same or more visible
+• We can not override methods with private access modifier, or with static & final specifiers
+• Only the instance methods (not private & not final) can be overridden
+
+
+     ****   Can we override static methods? (same property both parent and subclasses, it is method hiding)
+-   A static method cannot be overridden in Java. If you declare another static method with
+    same signature in child class than the static method of parent class will be hidden, and
+    any call to that static method in child class will go to static method declared in that class
+    itself.
+- This is known as method hiding in Java.
+- When a static method is defined in a superclass, it belongs to the class itself rather than any particular instance of the class.

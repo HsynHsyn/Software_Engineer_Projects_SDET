@@ -1,0 +1,113 @@
+Car Task Requirements:
+1. Create an Abstract Class Named 'Car':
+    - Variables: 
+        - final make
+        - final model
+        - final year
+        - price
+        - color
+    - Encapsulate all fields.
+    - Constructor: Initializes all fields.
+    - Conditions for setting fields:
+        - make, model, color must not be null or empty.
+        - year must not be less than 1886.
+        - price must not be negative.
+    - Abstract Methods:
+        - start()
+        - drive()
+    - Non-Abstract Methods:
+        - stop()
+        - toString()
+
+2. Create an Interface Named 'AutoPark':
+    - Variable:
+        - hasAutoPark
+    - Abstract Method:
+        - autoPark()
+
+3. Create a Child Interface of AutoPark Named 'AutoPilot':
+    - Note: Use the 'extends' keyword for inheritance.
+    - Variables:
+        - hasAutoPilot
+    - Abstract Method:
+        - selfDrive()
+
+4. Create an Interface Named 'Flyable':
+    - Variable:
+        - canFly
+    - Abstract Method:
+        - fly()
+
+5. Create a Subclass of Car Named 'Toyota'.
+6. Create a Subclass of Car Named 'Honda'.
+7. Create a Subclass of Car Named 'BMW'.
+8. Create two Subclasses of Car ('Audi' and 'Mercedes') that Implement the AutoPark Interface.
+9. Create two Subclasses of Car ('Tesla' and 'Nio') that Implement both AutoPark and AutoPilot Interfaces.
+10. Create a Subclass of Car Named 'CydeoCar' that Implements AutoPark, AutoPilot, and Flyable Interfaces.
+11. Create a Class Named 'CarClients':
+    - Instantiate an object from each concrete class.
+    - Test all functions of each object.
+    - Analyze the relationships between the classes.
+
+Device Task Requirements:
+
+1. Create an Abstract Class Named 'Device':
+    - Variables:
+        - final brand
+        - final model
+        - price
+        - color
+        - hasBattery
+        - hasPowerButton
+    - Encapsulate all fields.
+    - Constructor: Initializes all fields.
+    - Abstract Methods:
+        - turnOn()
+        - turnOff()
+    - Non-Abstract Method:
+        - toString()
+
+2. Create a Child Abstract Class of Device Named 'Phone':
+    - Extra Non-Abstract Methods:
+        - call(long phoneNum)
+        - text(long phoneNum)
+        - toString()
+
+3. Create a Child Abstract Class of Device Named 'Computer':
+    - Add extra methods as needed.
+
+4. Create an Interface Named 'Downloadable':
+    - Abstract Method:
+        - downloadApp()
+
+5. Create a Child Interface of Downloadable Named 'AndroidApps':
+    - Variables:
+        - AppStoreName
+        - OS
+
+6. Create a Child Interface of Downloadable Named 'AppleApps':
+    - Variables:
+        - AppStoreName
+        - OS
+
+7. Create the Following Subclasses of Phone:
+    - 'Iphone':
+        - Extends Phone class.
+        - Implements Downloadable & AppleApps interfaces.
+    - 'Samsung':
+        - Extends Phone class.
+        - Implements Downloadable & AndroidApps interfaces.
+    - 'Google':
+        - Extends Phone class.
+        - Implements Downloadable & AndroidApps interfaces.
+
+8. Create the Following Subclasses of Computer:
+    - 'PersonalComputer':
+        - Desktop
+        - Laptop
+
+9. Create a Class Named 'DeviceShop':
+    - Instantiate an object from each concrete class.
+    - Test all functions of each object.
+    - Analyze the relationships between the classes.
+

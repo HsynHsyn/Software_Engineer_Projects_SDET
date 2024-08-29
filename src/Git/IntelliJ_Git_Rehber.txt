@@ -1,0 +1,96 @@
+
+# IntelliJ IDEA'da Git İşlemleri: Adım Adım Rehber
+
+Bu rehber, IntelliJ IDEA'da bir projenin başlangıcından, branch oluşturma, değişiklik yapma, pull request oluşturma, merge işlemi ve olası bir conflict durumunu çözmeye kadar tüm aşamaları içermektedir.
+
+## Adım 1: Yeni Bir Proje Oluşturma
+
+1. **IntelliJ IDEA'yı Açın** ve "New Project" seçeneğini seçin.
+2. Proje tipini seçin (örneğin, "Java").
+3. Proje ismini girin ve dosya yolunu belirleyin.
+4. "Finish" butonuna tıklayarak projeyi oluşturun.
+
+## Adım 2: Git Repository'si Oluşturma veya Klonlama
+
+1. **Yeni bir Git Repository'si oluşturma**:
+   - `VCS` > `Enable Version Control Integration` menüsüne gidin.
+   - "Git" seçeneğini seçin ve `OK` tuşuna basın.
+   - Bu, proje dizininde `.git` klasörü oluşturur ve projenizi bir Git repository'sine dönüştürür.
+
+2. **Mevcut bir Repository'yi Klonlama**:
+   - `VCS` > `Get from Version Control` menüsüne gidin.
+   - Repository URL'sini girin ve klonlamak istediğiniz dizini seçin.
+   - `Clone` butonuna tıklayın.
+
+## Adım 3: İlk Commit İşlemi
+
+1. **Kodda Değişiklik Yapın**: Proje dosyalarınıza ilk kodları ekleyin veya değiştirin.
+2. **Commit Yapma**:
+   - Alt sağ köşedeki `Git` penceresine tıklayın veya `VCS` > `Commit` menüsüne gidin.
+   - Değişikliklerinizi eklemek için `+` simgesine tıklayın veya `Commit` ekranında `Changes` sekmesindeki dosyaları seçin.
+   - Mesaj kutusuna bir commit mesajı yazın.
+   - `Commit` butonuna tıklayın.
+
+## Adım 4: Yeni Bir Branch Oluşturma
+
+1. **Branch Oluşturma**:
+   - Alt sağ köşedeki `Git` penceresinde, mevcut branch'in adını göreceksiniz (örneğin `main`).
+   - Branch adına sağ tıklayın ve `New Branch...` seçeneğini seçin.
+   - Yeni branch ismini (örneğin `feature-branch`) girin ve `Create` butonuna tıklayın.
+
+2. **Yeni Branch'te Çalışma**:
+   - IntelliJ, sizi otomatik olarak yeni branch'e geçirecektir.
+   - Kodda değişiklik yapın ve bu değişiklikleri commit edin (Adım 3'teki gibi).
+
+## Adım 5: Branch'ler Arasında Merging
+
+1. **Ana Branch'e (main) Geçme**:
+   - Alt sağ köşedeki `Git` penceresinden ana branch'e (örneğin `main`) geçin.
+
+2. **Branch'leri Merge Etme**:
+   - `VCS` > `Git` > `Merge Changes...` seçeneğine gidin.
+   - Birleştirmek istediğiniz branch'i seçin (örneğin `feature-branch`).
+   - `Merge` butonuna tıklayın.
+
+3. **Çakışma Durumu (Conflict)**:
+   - Eğer bir çakışma oluşursa, IntelliJ IDEA çakışmayı çözecek araçlar sunar.
+   - Çakışan dosyalara çift tıklayın ve IntelliJ'deki `Merge` penceresinde hangi değişiklikleri kabul edeceğinizi seçin (`Accept Yours`, `Accept Theirs`, veya manuel olarak düzenleyin).
+   - Çakışma çözüldükten sonra `Apply` butonuna tıklayın.
+
+## Adım 6: Pull Request Oluşturma (Eğer GitHub veya GitLab Kullanıyorsanız)
+
+1. **Branch Pushlama**:
+   - Önce yeni branch'i uzak repository'ye pushlamanız gerekir.
+   - `VCS` > `Git` > `Push...` menüsüne gidin ve branch'inizi seçin. 
+   - `Push` butonuna tıklayın.
+
+2. **Pull Request Oluşturma**:
+   - GitHub veya GitLab gibi bir servis kullanıyorsanız, bu servislerin web arayüzünden pull request (PR) oluşturabilirsiniz.
+   - GitHub/GitLab arayüzünde "New Pull Request" butonuna tıklayın.
+   - Hangi branch'in hangi branch'e merge edileceğini seçin (örneğin, `feature-branch`'i `main`'e).
+   - PR açıklamasını girin ve `Create Pull Request` butonuna tıklayın.
+
+## Adım 7: Pull Request İncelemesi ve Onaylama
+
+1. **Pull Request İnceleme**:
+   - Takım üyeleri veya siz, PR üzerinde kod incelemesi yapabilir ve yorum yapabilirsiniz.
+   - Değişiklik yapılması gerekiyorsa, `Request Changes` seçeneğini kullanabilirsiniz.
+
+2. **PR'i Birleştirme (Merge)**:
+   - İnceleme tamamlandıktan ve tüm yorumlar çözüldükten sonra, PR'i birleştirin.
+   - Bu işlem, `feature-branch`'deki tüm değişiklikleri `main` branch'e entegre eder.
+
+## Adım 8: Branch'i Silme
+
+1. **Yerel Branch'i Silme**:
+   - Alt sağ köşedeki `Git` penceresinde branch adına sağ tıklayın ve `Delete` seçeneğini seçin.
+   
+2. **Uzak Branch'i Silme**:
+   - Eğer branch'inizi uzak repository'den de silmek istiyorsanız, terminalde şu komutu kullanabilirsiniz:
+     ```bash
+     git push origin --delete feature-branch
+     ```
+
+## Sonuç
+
+Bu adımlarla, IntelliJ IDEA kullanarak bir Java projesi üzerinde Git işlemleri gerçekleştirdiniz. Branch oluşturma, değişiklik yapma, pull request, merge ve conflict çözme süreçlerini baştan sona kadar takip ettiniz. Bu rehber, Git'i IntelliJ IDEA ile nasıl etkin bir şekilde kullanabileceğinizi anlamanıza yardımcı olacaktır.

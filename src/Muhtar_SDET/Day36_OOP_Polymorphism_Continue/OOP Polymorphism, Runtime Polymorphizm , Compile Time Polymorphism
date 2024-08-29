@@ -1,0 +1,28 @@
+OOP Polymorphsim: parent type being referenced to the child object
+				 ability of the objects to take on many forms
+
+				 "IS A" relation is a must
+
+				 Reference type can be either parent class or parent interface, and object must be created from child class
+
+				 Reference Type decides what can be accessed/called
+				 		(if we need to access the features that are in object type, but not in the reference type, then we need down casting)
+
+		 		 Object type decides which implementation will be executed
+
+
+Runtime polymorphism (dynamic polymorphism): method overriding
+										one method with multiple implementations (revealed during the run time)
+
+										eat():
+
+										implementation1: Baklava
+										implementation2: Java
+										...
+
+compile time polymorphism (static polymorphism) : method overloading
+						   multiple methods with the same name
+						   each method has one implementation ONLY ( revealed during the compile time)
+
+    					   add(num1, num2)
+						   add(num1, num2, num3)

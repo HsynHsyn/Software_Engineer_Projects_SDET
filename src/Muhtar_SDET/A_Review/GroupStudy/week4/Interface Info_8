@@ -1,0 +1,80 @@
+Interface ;
+• Interface is relationship with the classes because classes uses interface`s properties
+• It’s a template, a blueprint of a class
+• Interface keyword is used to create interface
+• Specifies the behavior(s) that a class should implement like methods
+• Provides additional methods that class(es) need.
+• We can achieve 100% abstraction using interfaces (Java'da 100% abstraction elde etmek, bir sınıfın tüm detaylarının gizlenmesi ve
+  sadece ne yapılması gerektiğinin tanımlanması anlamına gelir. Bunu sadece interface kullanarak gerçekleştirebiliriz.)
+
+Properties of Interface
+• Variables are static & final by default
+• *** Interface can have static methods, abstract methods and default methods only***
+• Public is the  only access modifier that can be used in interface (except for static
+methods) and given by default
+• Abstract keyword is given by default to the abstract methods of interface
+
+            ***
+- Variables: static & final variable only (if you type public java implicitly convert to static & final)
+- Methods: static, abstract and default methods only
+- increase the reusability
+
+        ***important***
+What Interface can not have?
+• An interface can not have instance variables
+• An interface can not have instance methods
+• An interface can not have constructors
+• An interface can not have initializer blocks (static and instance)
+• *** We can not create objects from interface
+
+Implementing the Interface
+
+• Class can extend only one superclass, but java allows a class to implement multiple interfaces
+• Implements keyword is used to inherit from interface(s)
+• When a class implements multiple interfaces, it must implement (override) all the abstract methods
+----------------------------------------------------------------------------------------------------
+                                Summary:
+
+Abstract class vs interface: both are used for achieving abstraction
+							 both can not be instantiated
+							 both are meant to be inherited
+							 both can not be final
+
+ abstract class: one class can extends one abstract class ONLY
+						 				instance & statics both are supported
+						 				constructor
+						 				4 access modifiers are supported
+
+interface: one class can implement multiple interfaces
+extends vs implements:
+		extends:
+			class extends class
+			interface extends interface(s)
+		implements:
+			class implements interface(s)
+		extends & implements:
+				extends first then implements
+
+-------------------------------------------------------------------------------------------------------
+                          *** Abstract Class vs Interface ***
+Can not be instantiated                             - Can not be instantiated
+Multiple inheritance is not allowed                 - Multiple inheritance is allowed
+Can have constructor                                - Can not have constructor
+Can have instance, static and abstract methods      - Can have static, abstract and //default methods//
+Can have instance and static variables              - Can only have static variable (final by default)
+Can not be final                                    - Can not be final
+Can use other access modifiers than public          - Can not use the access modifiers other than
+                                                     public & private (for static methods)
+
+Extra Info:
+
+Neden Interface'ler Sınıflarla İlişkili?
+
+Soyutlama (Abstraction): Interface'ler, bir sınıfın nasıl çalıştığını değil, ne yapması gerektiğini tanımlar.
+Bu, soyutlamayı teşvik eder.
+
+Bağımlılığı Azaltma (Decoupling): Sınıflar, interface'ler aracılığıyla birbirine bağlandığında,
+bu sınıflar arasında sıkı bir bağımlılık yerine gevşek bir bağ kurulur. Bu da daha esnek ve bakımı kolay bir kod yapısı sağlar.
+
+Standartlaştırma (Standardization): Interface'ler, belirli bir davranış standardını zorunlu kılar.
+Farklı sınıflar, aynı interface'i uyguladığında, bu sınıfların aynı davranış setini sunacağını biliriz.

@@ -1,0 +1,62 @@
+- ilk once bir repo githubdan alinir intelije
+- ikinci olarak local branch olusturulur, herhangi bir seyi etkilelememek icin
+- local branch dee degisiklik yap ve commit ve commit mesaj yap
+- push local branch with push button
+- Github a git ve Compare& pull request e tikla
+- burada requst basligi yorum yapabilirsin
+- reviewers eklenebilir
+- assign yapabilirsin
+- wait onay vermelerini
+- click on  merge pull request ve master da kabul edilir ve daha sonra silinebilir branch github da
+- comment eklenebilir
+
+            intelijje ye don
+
+- master branche don
+- update ve yapilan degisiklikler master branch da gorunur
+- bu noktadan sonra masterda yapilan bir degisiklik push ve pull request yapilirsa hata verir cunku pull request yapilamaz
+ request islemleri tekrar yapilmalidir
+
+            conflict
+- local master branch secilir ve fetch yapilir ve master branch tan bilgi alinir ve remote repo gorunur remote-origin-master in altinda
+- local master update yapilir ve conflict gorulur ve merge yapilir sonuclar karsilastirilir
+- accept changes "Appply"
+- Local and remote same now
+- switch the my branch(like feature 124) and merge branch(to master) and merge
+- update you branch from local master  ve conflict gorunur
+- merge yapilir ve degisiklikler gorunur
+- butun degisiklikler result ekranina eklenir local branch ve local masterdaki guncellenmis bilgiler
+- ve "Apply" ve push yapoilir ve yeni pull request yapilir
+- sonra githuba gidilir compare & pull req e basilir
+- you see able to merge without any error cunku merge i update etti local branch ile ve pull req olusturdu
+- first pull the master from remote to the local master and update then swirch the branch and merge with the local master
+- biz local olarak masterdan kendi branch imiza merge yapiyoruz
+
+
+
+Scenario 5: working together
+
+To work together as a team we can follow github flow. it is a branch based work flow, whenever you want code you follow these steps;
+
+	1.Create a branch from master/main(default branch)
+		-branch allow us to have same environment with master and not affect the code. we will be working on the branch that we created.
+	2.commit your changes
+		-do your work and commit
+	3.open a pull request
+		-we open a pull request to merge our work with master branch. most of the time it will requre some review, approval to merge.
+	4.review and approve
+		-someone from the team, based on structure and rules will review and approve your changes or ask for changes.
+		after approval someone can merge the code or whoever assigned.
+
+Scenario 6: Master updated while working - conflict
+
+	we created branch for feature and working on it but before we create PR, we need to make sure we have updated version of the master branch to avoid merge conflicts. so after our work done, we need to checkout master
+	 , get the updates, pull, checout the our branch and merge. if there is a conflict we can update the code.
+
+--------------------------------------------------------------------------------------------------------------------
+Save your changes to switch between branches without commits
+Git -> Uncommitted changes -> Stash changes
+
+checkout bracnh and comeback
+
+Git -> Uncommitted changes -> Unstash changes

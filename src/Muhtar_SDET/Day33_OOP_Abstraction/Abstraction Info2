@@ -1,0 +1,35 @@
+Abstraction
+• Process of hiding implementation details from the user
+• Only the functionality will be provided to the user
+• Focusing on the essential qualities of something rather than one specific example. (Ignoring the irrelevant & unimportant)
+• User will have the information on what the object does instead of how it does (onemli olan yapmasi nasil yaptigi degil)
+
+Abstract Method
+• A method that does not have body, only signature
+• A method that’s meant to be overridden.  why?
+• The abstract keyword is used to create abstract method
+• Abstract Method can not be included final , private, static in the method signature
+. with abstract class ignore the abstract parents abstract method (Yani eger parent class ve subclassi abstract sa subclass parent clasin abstract
+metodlarini gozardi eder ama subclasin subclass lari butun abstract metodlari almak zorundadir)
+example// package Muhtar_SDET.Day35_OOP_Polymorphism_Intro.TransportationTask;
+
+
+Abstract Class
+• A class that’s meant to be a parent (super) class// because abstract class can not be instantiated this meant it can not create object
+• *** Goal is to provide reusable variables and methods to subclasses
+• The abstract keyword is used to create the abstract class
+• *** An abstract class can not be instantiated
+
+*** Parent class' abstract methods must be overridden in child (non-abstract) class
+
+*** if you want to create a subclass :
+    - if you will create object it can never be abstract, because it provides reusable variables and methods not object
+    - if you want to create a parent clas from subclass you can use abstract (yani subclass da abstract olabilir eger objecti olmasini istemiyorsan)
+
+Creating Object
+• Abstract class is meant to be inherited only, not meant to be instantiated, not create objects
+• Abstract class is not a concrete class (classic class ) and object has to be concrete
+• A subclass of abstract class is called concrete class, and it can be instantiated
+• A Concrete class *** must implement all the inherited abstract methods ***
+
+for example // package Muhtar_SDET.Day34_OOP_AbstractionContinue.AnimalTask;

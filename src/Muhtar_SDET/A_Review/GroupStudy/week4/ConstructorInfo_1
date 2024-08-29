@@ -1,0 +1,41 @@
+OOP Principles (can be question at the beginning of the class)
+- There are 4 Object-Oriented Programming (OOP) principles:
+• Encapsulation  - hiding data
+• Inheritance    - creating relationship child and parent
+• Abstraction    - hiding the function/implementation details from the user
+• Polymorphism   - the ability of one object to exist to multiple forms
+
+---------------------------------------------------------------------------------------
+
+// *** instance block runs before the constructor ***
+// Static belongs to the Class, objects comes from Class
+// without Constructor there can be no object
+// Class must have Constructor (it is special method)
+//      this(): refers to the calling constructors
+//	    this. : to call instance variables & instance methods
+// **** this(): used for calling constructors in another constructor// recursive constructor gives an error
+// we can overload constructors
+
+      Constructor Calls:
+//      1. Constructors can not be called by its name ( this() need to be used)
+//      2. Only a constructor can call another constructor
+//		3. Constructor call MUST be at the first step
+//		4. One constructor can not call more than one constructor
+//		5. Constructor can not call or contain itself
+===== Muhtar_SDET.Day26_ConstructorsContinue_StaticsIntro;
+      Muhtar_SDET.Day26_ConstructorsContinue_StaticsIntro; has an example about calling constructor
+--------------------------------------------------------------------------------------------------------
+              StaticInfo (optional Info)
+        // Static is a non-access modifier
+        // static is the opposite of the instances
+        // instance becomes object member
+        // There is only one copy of the static shared for all objects of the class
+        // All the Objects of the class shares the same copy
+        // static members are Class member
+        // **** it is used static block one time ****
+        // **** static methods cannot have instance
+        // *** static only accepts static, instance methods accept static
+        // *** using static methods helps to use less memory
+
+
+

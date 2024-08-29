@@ -1,0 +1,148 @@
+
+Week 12 review
+
+Day28 - OOP Encapsulation
+Day29 - OOP Inheritance
+Day29 - OOP Inheritance continue
+__________________________________________________________________
+
+Encapsulation
+Inheritance
+__________________________________________________________________
+
+OOP > Exception/Error Handling > Data structures/Collections. Git+Github
+AI class at end of Java.
+
+4 weeks of java left.
+
+Test Automation classes: > Html > Selenium > Cucumber > JUnit > Maven....etc
+    UI automation
+    API automation
+    SQL -> database automation
+
+
+__________________________________________________________________
+Encapsulation
+
+What is OOP?
+
+    Object Oriented Programming: the concepts that define how an object behaves.
+
+    OOP has 4 principles:
+        - Encapsulation
+        - Inheritance
+        - Abstraction
+        - Polymorphism
+
+    Any programming language that supports those principles, is called Object Oriented Programming Language. Java is OOPL
+
+    Purpose of OOP is make classes organized, reusable, maintainable, readable
+-----------------------------
+
+-----------------------------
+Encapsulation - data hiding:
+    1) make variables private
+    2) provide public getter/setter methods
+
+
+    encapsulations allow you to hide your information from direct access. We are able to limit the access to variables by using the private keyword and allowing PUBLIC getters and setters
+
+    getter: method used to get the value of that specific variable
+
+    setter: method used to change/resign the value of that specific variable
+
+    another definition: encapsulation is the grouping of data and methods into a unit
+
+1)
+public class Person {
+    public String name;
+
+}
+
+other class:
+    Person p1 = new Person();
+    p1.name = "Sarah";
+
+    Person p2 = new Person();
+    p1.name = "%"; no control over data that is being assigned
+__________________________________________________________________
+
+public class Person {
+    private String name;
+
+    public void setName(String name) {
+        //if statement to check if name is valid
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+}
+
+other class:
+    Person p1 = new Person();
+    //p1.name = "Sarah";//ERROR
+    p1.setName("Sarah");
+
+    Person p2 = new Person();
+    p2.setName("12");//Error using conditions
+
+    println(p1.getName()); //Sarah
+    p1.setName("Esra");
+    println(p1.getName()); //Esra
+
+_____________________   _____________________________________________
+
+Inheritance
+
+    allows a class to inherit/pass information from different classes
+
+        + provides code re-usability and maintainability
+        + good way to organize/group classes that are related
+
+How to inherit in java?
+
+    the extends keyword allows inheritance
+
+terminology to describe inheritance relationship between classes:
+
+    is - a
+    Child is a Parent
+
+    names to describe the different classes:
+        parent, super, or base class: passes the information
+
+        child, sub, or derived: gets the information
+
+Object class
+
+    The Object class is the parent of all classes
+        - doesn't need to be defined, it is automatically inherited
+            where toString method is defined
+
+__________________________________________________________________
+
+Constructors in Inheritance
+    constructor is not inherited, but the child class constructor must always call the parent class constructor
+        -> using super() the parent constructor is called
+
+        -> the default constructor always called super() in the first line
+
+__________________________________________________________________
+
+access modifiers
+
+    keywords used to define the scope or visibility (where you can use/access the variables, methods, etc]
+
+    [Most Visible] public  -> protected  -> default -> private [Least Visible]
+
+    public: accessible everywhere in the project
+
+    protected: accessible by the classes within the same packages and the sub classes in any package
+        (second part is about inheritance, so we will come back to this)
+
+    default: accessible within the same package
+        -> default is used when no other access modifier is defined
+
+    private: accessible only in the same class

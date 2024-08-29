@@ -1,0 +1,178 @@
+__________________________________________________________________
+
+final
+Abstraction
+Abstract Class
+Interface
+__________________________________________________________________
+
+final
+
+	final variable: a fixed variable. value cannot be reassigned or changed
+
+		Ex: final int a = 5;
+			a = 10; -> this line will not compile because the variable cannot be changed
+
+		- constants: public static final variables
+			information/data that are fixed and accessible everywhere
+
+			Ex: Math.PI
+				Integer.MAX_VALUE
+
+			- convention for creating constant variables: constant variables are created in all uppercase and underscore for spaces
+
+	final method: method that cannot be overridden -> cannot change the implementation of the method
+
+		syntax: public final void method(){}
+
+		Q: can you overload final methods
+			yes
+
+	final class: the class cannot be the parent of another class.
+
+		syntax: public final class name {}
+
+		Q: can a final class be a sub class
+			yes
+__________________________________________________________________
+
+Abstraction
+
+	concept for hiding implementation. Allow us to focus on WHAT the functionality is (action/method), but not worry about HOW its done (implementation)
+
+	abstraction does not work without inheritance
+
+	implementation: the function of the code, how the code achieves the result
+
+in java there is two ways to achieve abstraction with abstract methods:
+	abstract class
+	interface
+
+	abstract methods
+
+		a method without any implementation (a method with no code body)
+			ex:
+			public abstract void rotate();
+
+		-> these methods must be overridden in the sub classes at some point
+
+	concrete class: first non-abstract class (normal class). This class must implement all abstract that are inherited
+__________________________________________________________________
+
+Abstract Class
+
+	a class that is defined with the abstract keyword
+
+		ex: public abstract class Planet {}
+
+	-> an abstract class is able to define abstract methods
+	-> this class cannot instantiated (cannot create objects from this class)
+
+	everything else about the classes is the same
+
+Q: Can you make non abstracts methods in an abstract class
+	yes, you can make instance methods or static methods
+
+Q: Can you have an abstract class without any abstract methods
+	yes, you are allowed to create abstract methods, but it doesn't require you to make any
+
+Difference between normal class & abstract class
+
+	both: instance & static methods, variables, constructors
+
+	abstract class:
+		cannot make objects of the class
+		can make abstract method
+		cannot be final
+
+	normal class:
+		create objects of the class
+		cannot create abstract methods
+		can be final
+__________________________________________________________________
+
+Interface
+
+	interface is NOT a class. An interface is a blueprint for a class
+		- Cannot be instantiated
+
+	Allows creation of abstract method
+		any method declared is public abstract automatically
+
+	implementing an interface creates an is a relation
+		implements keyword is used to inherit the abstract methods from the interface
+
+	everything uses public access modifier automatically
+
+	variables: any variable declared is public static final automatically (constant variable)
+		-> interface do not have any instance variables
+
+What does an interface have
+	constant variables, abstract methods, static methods, default methods
+
+What does an interface NOT have
+	instance variables, instance methods, constructor, blocks of code (static block)
+
+Q: Can we have any non-abstract methods in interface?
+Q: Can we have any methods with implementation/code block in interface?
+	-> these two questions ask about the same concept
+
+	static and default methods allow creation of methods that have implementation
+
+	static: a method with code body and it is accessed by the interface name
+		-> these methods are not inherited
+
+	default: a method with a code body and it is accessed by the object of the class that is implementing the interface
+
+		instance level for the class that implements
+
+		-> this is not the default access modifier. It is a keyword for these methods. Default methods are only created in interface
+
+Inheritance with interface
+
+	interface is not a class, which means it doesn't follow all the same rules
+
+		-> classes can only have one parent, but interface doesn't need follow that
+
+		- a class can implement as many interfaces as needed
+		- an interface can inherit as many interfaces as needed
+
+How to use the interfaces
+
+	class --> class: extends
+	interface --> class: implements
+	interface --> interface: extends
+__________________________________________________________________
+
+Abstract class vs Interface
+
+	both:
+		cannot create objects
+		can create abstract methods
+		can create static methods
+		create an is a relation
+		can be inherited
+
+	abstract class:
+		can have constructors
+		can have instance variables
+		can have instance methods
+		can have blocks of code: static block
+		can use any access modifier
+		can only have one parent
+		static variables that are not final
+
+	interface:
+		public is the access modifier used by default
+		methods created are abstract by default
+		variables created are static final (constant)
+		multiple interface can be implemented to a class - or - inherited to another interface
+		static methods are not inherited
+		can create default methods
+
+	putting it all together:
+
+		both are useful to achieve abstraction, but interface is the preferred way because of the ability to implement many interfaces. Abstract class works like a normal class for the most part, so it still follows the inheritance rules of only having one parent. Interfaces do not need to follow the rule of multiple inheritance because they are not a class and have their own properties. Methods created in an interface are abstract by default, but there is two other options to create non-abstract methods which are the static and default methods
+
+__________________________________________________________________
+

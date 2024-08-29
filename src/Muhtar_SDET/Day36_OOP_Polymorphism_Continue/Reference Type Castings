@@ -1,0 +1,22 @@
+Reference Type Castings: THERE MUST BE INHERITANCE
+			  1. Upcasting: casting the sub type to super type (done implicitly)
+			  			Car car	= new BMW();
+			  2. Downcasting: casting the super type to sub type (done explicitly)
+			  (why downcasting = because polymorphism rule, reference type decides what is accessible)
+
+Reference Type Castings
+• There must be IS A (inheritance) relation between the object type and reference
+type we are casting it to, otherwise ClassCastException will be thrown
+• There are two types of reference type castings: upcasting and downcasting
+
+Upcasting
+• Casting the smaller reference type (sub type) to larger reference type (super type)
+• Upcasting is done implicitly and cast operator is not required to be given explicitly
+• Allows us to achieve polymorphism without any explicit action
+ Dog dog =  new Dog();
+        Animal animal = (Animal) new Dog(); // implicit casting , no need to type (Animal)
+
+Down casting
+• Casting the larger reference type (super type) to smaller reference type (sub type)
+• Down casting is done explicitly and cast operator is required to be given explicitly
+• Allows us to access the features of the objects type that are not in reference type

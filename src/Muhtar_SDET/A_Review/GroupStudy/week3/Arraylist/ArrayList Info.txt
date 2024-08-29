@@ -1,0 +1,19 @@
+The ArrayList Class
+
+● Part of the collection framework
+● Allows duplicate elements
+● Similar to Array, ArrayList allows object storage.
+● Unlike Array, ArrayList object:
+– Automatically expands when a new item is added
+– Automatically shrinks when items are removed
+● Requires: import java.util.ArrayList;
+
+
+Syntax:
+ArrayList <Integer> list = new ArrayList<Integer>(); // can use like "new ArrayList<>();"
+System.out.println(list); // empty size = 0
+
+
+How to Create an ArrayList?
+- Creates an empty ArrayList - no elements
+- By default the capacity is: 10

@@ -1,0 +1,37 @@
+OOP Principles
+- There are 4 Object-Oriented Programming (OOP) principles:
+• Encapsulation  - hiding data
+• Inheritance    - creating relationship child and parent
+• Abstraction    - hiding the function/implementation details from the user
+• Polymorphism   - the ability of one object to exist to multiple forms
+
+            Poly + Morphism (Many Forms)
+• Ability of the objects to take on many forms
+• Occurs when reference type is parent class/interface and object type is child
+
+     Reference Type - Object Type
+    - Animal animal1 = new Dog();
+    - Animal animal2 = new Cat();
+    - Animal animal3 = new Lion();
+    - Flyable animal3 = new Eagle(); // interface
+
+// in polymorphism, it can not be called child class`s own methods
+ Animal animal =  new Dog("Max", "Husky", 'M', "Small","White");
+        animal.eat();
+        animal.drink();
+        animal.sleep();
+
+        // in polymorphism, it can not be called child class`s own methods
+        // animal.play(); gives an error
+        // animal.bark(); gives an error
+
+        *** Calling method in polymorphism ***
+• Only the methods/variables in reference type can be called
+• When we call a method, it will call overridden version from a child class
+• If method is not overridden, it will call parent/super class version
+
+            *** Polymorphism Rules ***
+• Reference type can be parent class or interface
+• Object type can be any extending or implementing child class
+• Reference type decides what is accessible
+• Object type decides which implementation of the method to be executed when the method is called
