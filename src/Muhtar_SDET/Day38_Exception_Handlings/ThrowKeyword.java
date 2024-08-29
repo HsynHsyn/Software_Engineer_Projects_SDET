@@ -16,9 +16,9 @@ public class ThrowKeyword {
             /*System.err.println("Invalid age");
             System.exit(1);*/
             if (age < 0) {
-                throw new InputMismatchException("age of the person should not be negative"); // we create this
+                throw new InputMismatchException("age of the person should not be negative"); // we create this but InputMismatchException is A relation RunTimeException
             } else {
-                throw new InputMismatchException("age of the person should not be greater than 150");
+                throw new InputMismatchException("age of the person should not be greater than 150"); // we create this
 
             }
         }

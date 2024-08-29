@@ -10,7 +10,7 @@ public class Person {
         setName(name);
         setAge(age);
 
-        if (!(gender == 'M' || gender == 'F')){ // if the gender si invalid
+        if (!(gender == 'M' || gender == 'F')){ // if the gender is invalid
             throw new RuntimeException("Invalid Gender " + gender ); // throw the runtime exception and crush the program
         }
         this.gender = gender;

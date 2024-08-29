@@ -14,6 +14,7 @@ class CustomUnCheckedException extends RuntimeException{
 public class CustomExceptions {
     public static void main(String[] args) {
 
+        // custom checked
         try {
             throw new CustomCheckedException();
         } catch (CustomCheckedException e) {
@@ -21,7 +22,13 @@ public class CustomExceptions {
         }
         System.out.println("--------------------------------------");
 
-        throw new CustomUnCheckedException();
+        // custom unchecked
+        try {
+            throw new CustomUnCheckedException();
+        } catch (CustomUnCheckedException e) {
+            e.printStackTrace();
+        }
+
 
     }
 }

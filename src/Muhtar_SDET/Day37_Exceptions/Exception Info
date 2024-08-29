@@ -70,6 +70,8 @@ Exceptions: unwanted/unexpected events
 						All the RuneTimeExceptions are unchecked exception
 
 						unknown
+						if we do not know exception type we can use RunTimeException because RunTimeException is unchecked exception
+
 
 		Checked exceptions: occurs during the compile time. must be handled right away
 
@@ -126,6 +128,8 @@ Throws Keyword
 • Fastest way to get rid of the compilation error that’s caused by a checked exception
 • throws keyword: used for handling checked exceptions ONLY
 						caller of the method will be responsible for handling the exception
+. *** throws is used for checked exceptions, it is temporary handling, just ignoring the problem
+. if you will not use the method again throws keyword is best choose
 
 Throws keyword - Rule
 • Whoever calls the method that has throws keyword in its signature is responsible

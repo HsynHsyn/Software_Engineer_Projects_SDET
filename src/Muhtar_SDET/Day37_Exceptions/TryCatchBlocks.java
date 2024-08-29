@@ -5,7 +5,7 @@ public class TryCatchBlocks {
 
         System.out.println("Program started");
 
-        // if try can handle situation it can , or catch must handle
+        // if try can handle situation it can , or catch block must handle
         try{
 
             System.out.println(9/0); // Arithmetic Exception

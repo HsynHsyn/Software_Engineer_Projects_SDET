@@ -12,7 +12,7 @@ public class TryCatchBlocks2 {
             System.out.println(arr[1000]);
                                         // printStackTrace() can be placed only in catch block
         } catch (RuntimeException e){ // strongly recommended printStackTrace() in the catch block
-            //e.printStackTrace(); // *** displays full details of the exception after the execution of program
+            //e.printStackTrace(); //    *** displays full details of the exception after the execution of program
             System.out.println(e.getMessage());
         }
 
@@ -25,7 +25,7 @@ public class TryCatchBlocks2 {
         try{
             System.out.println(9/0);
         }catch (RuntimeException e){
-            e.printStackTrace(); // we can use both of them at the same time but not necessary
+            e.printStackTrace(); // we can use both of them ( getMessage() ) at the same time but not necessary
             System.out.println(e.getMessage());
         }
         System.out.println("Program2 ended");
