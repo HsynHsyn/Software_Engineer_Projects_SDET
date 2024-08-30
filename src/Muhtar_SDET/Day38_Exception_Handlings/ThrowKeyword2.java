@@ -5,11 +5,14 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 
 public class ThrowKeyword2 {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException, FileNotFoundException {
 
+        method1(); // again error because handled temporarily
+
+        method2();
     }
 
-    // method1(); again error because handled temporarily
+
 
     public static void pauseFor5Seconds() throws InterruptedException { // not actually handled, temporarily handled
         Thread.sleep(5000);

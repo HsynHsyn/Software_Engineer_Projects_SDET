@@ -1,20 +1,14 @@
-package Muhtar_SDET.Day36_OOP_Polymorphism_Continue.carShopTask;
+package Muhtar_SDET.A_Review.GroupStudy.week5.carShopTask_1;
 
-import Muhtar_SDET.Day30_OOP_Inheritance_Continue.phoneTask.Phone;
-import Muhtar_SDET.Day30_OOP_Inheritance_Continue.phoneTask.Samsung;
 import Muhtar_SDET.Day34_OOP_AbstractionContinue.Audi;
 import Muhtar_SDET.Day34_OOP_AbstractionContinue.Car;
 import Muhtar_SDET.Day34_OOP_AbstractionContinue.Honda;
 import Muhtar_SDET.Day34_OOP_AbstractionContinue.Tesla;
-import Muhtar_SDET.Day36_OOP_Polymorphism_Continue.IPhone;
-import Saturday_Reviews.week9.ArrayListDemo;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 
-
-public class CarShop {
+public class CarShopReview2 {
     public static void main(String[] args) {
 
         Car[] cars = {
@@ -81,12 +75,13 @@ public class CarShop {
         //1.3. Display the car with the highest price.
         //1.4. Display the car with the lowest price.
 
+
         Car highestPriceCar = cars[0];
         Car lowestPriceCar = cars[0];
-        for(Car each : cars){
-            if(each.getPrice() > highestPriceCar.getPrice()){
+        for (Car each : cars) {
+            if (each.getPrice() > highestPriceCar.getPrice()) {
                 highestPriceCar = each;
-            } else if (each.getPrice() < lowestPriceCar.getPrice()){
+            } else if (each.getPrice() < lowestPriceCar.getPrice()) {
                 lowestPriceCar = each;
             }
         }
@@ -120,11 +115,11 @@ public class CarShop {
 
         for (Car each : carArrayList) {
 
-            if (each.getPrice() > highestPrice ){
+            if (each.getPrice() > highestPrice) {
                 highestPrice = each.getPrice();
             }
 
-            if (each.getPrice() < lowestPrice ){
+            if (each.getPrice() < lowestPrice) {
                 lowestPrice = each.getPrice();
             }
 
@@ -132,17 +127,14 @@ public class CarShop {
 
         for (Car each : carArrayList) {
 
-            if (highestPrice == each.getPrice()){
+            if (highestPrice == each.getPrice()) {
                 System.out.println("Highest Priced Car: " + each);
             }
 
-            if (lowestPrice == each.getPrice()){
+            if (lowestPrice == each.getPrice()) {
                 System.out.println("Lowest Priced Car: " + each);
             }
 
         }
-
-
-
     }
 }

@@ -18,7 +18,7 @@ public class ThrowKeyword {
             if (age < 0) {
                 throw new InputMismatchException("age of the person should not be negative"); // we create this but InputMismatchException is A relation RunTimeException
             } else {
-                throw new InputMismatchException("age of the person should not be greater than 150"); // we create this
+                throw new InputMismatchException("age of the person should not be greater than 150");
 
             }
         }

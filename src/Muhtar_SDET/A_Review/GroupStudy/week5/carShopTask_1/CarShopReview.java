@@ -1,20 +1,15 @@
-package Muhtar_SDET.Day36_OOP_Polymorphism_Continue.carShopTask;
+package Muhtar_SDET.A_Review.GroupStudy.week5.carShopTask_1;
 
-import Muhtar_SDET.Day30_OOP_Inheritance_Continue.phoneTask.Phone;
-import Muhtar_SDET.Day30_OOP_Inheritance_Continue.phoneTask.Samsung;
 import Muhtar_SDET.Day34_OOP_AbstractionContinue.Audi;
 import Muhtar_SDET.Day34_OOP_AbstractionContinue.Car;
 import Muhtar_SDET.Day34_OOP_AbstractionContinue.Honda;
 import Muhtar_SDET.Day34_OOP_AbstractionContinue.Tesla;
-import Muhtar_SDET.Day36_OOP_Polymorphism_Continue.IPhone;
-import Saturday_Reviews.week9.ArrayListDemo;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 
 
-public class CarShop {
+public class CarShopReview {
     public static void main(String[] args) {
 
         Car[] cars = {
@@ -37,27 +32,17 @@ public class CarShop {
 
         //1.2. Display all cars eligible for recall:- Honda: Years 2010 to 2019 /- Audi: Years 2015 to 2019 // -Tesla: Years 2015 to 2023
         //first solution
-        /*
-        for(Car car : cars){
-            int year = car.getYear();
-            boolean forHonda = car instanceof Honda && year >= 2010 && year <= 2011;
-            boolean forAudi = car instanceof Audi && year >= 2015 && year <= 2019;
-            boolean forTesla = car instanceof Tesla && year >= 2015 && year <= 2016;
-            if(forHonda || forAudi || forTesla){
-                System.out.println(car);
-            }
-         */
 
-        System.out.println("----------------Honda----------------------");
-
-        //Honda
         for (Car each : cars) {
             if (each instanceof Honda) {
                 if (each.getYear() >= 2010 && each.getYear() <= 2019) {
                     System.out.println(each);
+
                 }
             }
+
         }
+
         System.out.println("----------------Audi----------------------");
         for (Car each : cars) {
             if (each instanceof Audi) {
@@ -66,6 +51,7 @@ public class CarShop {
                 }
             }
         }
+
         System.out.println("------------------Tesla-----------------------------");
         for (Car each : cars) {
             if (each instanceof Tesla) {
@@ -74,28 +60,70 @@ public class CarShop {
                 }
             }
         }
-        System.out.println("------------------highest price & lowest price-----------------------------");
-
-        System.out.println("--------------------------------------");
+        System.out.println("-----------------muradil--------------------------------");
+        for (Car car : cars) {
+            int year = car.getYear();
+            boolean forHonda = car instanceof Honda && year >= 2010 && year <= 2019;
+            boolean forAudi = car instanceof Audi && year >= 2015 && year <= 2019;
+            boolean forTesla = car instanceof Tesla && year >= 2015 && year <= 2023;
+            if (forHonda || forAudi || forTesla) {
+                System.out.println(car);
+            }
+        }
 
         //1.3. Display the car with the highest price.
         //1.4. Display the car with the lowest price.
 
-        Car highestPriceCar = cars[0];
-        Car lowestPriceCar = cars[0];
-        for(Car each : cars){
-            if(each.getPrice() > highestPriceCar.getPrice()){
-                highestPriceCar = each;
-            } else if (each.getPrice() < lowestPriceCar.getPrice()){
-                lowestPriceCar = each;
+        ArrayList<Car> carArrayList1 = new ArrayList<>(Arrays.asList(cars));
+        double highestPrice1 = carArrayList1.get(0).getPrice();
+        double lowestPrice1 = carArrayList1.get(0).getPrice();
+
+        for (Car each : carArrayList1) {
+
+            if (each.getPrice() > highestPrice1) {
+                highestPrice1 = each.getPrice();
             }
+
+            if (each.getPrice() < lowestPrice1) {
+                lowestPrice1 = each.getPrice();
+            }
+
         }
 
-        System.out.println("Highest Priced Car: " + highestPriceCar);
-        System.out.println("Lowest Priced Car: " + lowestPriceCar);
+        System.out.println("--------------------------------------------------------------");
+
+        ArrayList<Car> carArrayList = new ArrayList<>(Arrays.asList(cars));
+
+        double highestPrice = carArrayList.get(1).getPrice();
+        double lowestPrice = carArrayList.get(3).getPrice();
 
 
-        //1.5. Create an ArrayList of Tesla named 'teslaCars' and store all Tesla cars from the cars array.
+        for (Car each : carArrayList) {
+
+            if (each.getPrice() > highestPrice) {
+                highestPrice = each.getPrice();
+            }
+
+            if (each.getPrice() < lowestPrice) {
+                lowestPrice = each.getPrice();
+            }
+
+        }
+        System.out.println("---------------------lowest/highest----------------------------------");
+
+        for (Car each : carArrayList) {
+
+            if (highestPrice == each.getPrice()) {
+                System.out.println("Highest Priced Car: " + each);
+            }
+
+            if (lowestPrice == each.getPrice()) {
+                System.out.println("Lowest Priced Car: " + each);
+            }
+
+        }
+
+        //  1.5. Create an ArrayList of Tesla named 'teslaCars' and store all Tesla cars from the cars array.
         System.out.println("------------------teslaCars-----------------------------");
 
         ArrayList<Tesla> teslaCars = new ArrayList<>();
@@ -107,42 +135,8 @@ public class CarShop {
         System.out.println(teslaCars);
 
         System.out.println("==============================================================");
-
-        //Second solution
-        //1.3. Display the car with the highest price.
-        //1.4. Display the car with the lowest price.
-
-        ArrayList<Car> carArrayList = new ArrayList<>(Arrays.asList(cars));
-
-        double highestPrice = carArrayList.get(0).getPrice();
-        double lowestPrice = carArrayList.get(0).getPrice();
-
-
-        for (Car each : carArrayList) {
-
-            if (each.getPrice() > highestPrice ){
-                highestPrice = each.getPrice();
-            }
-
-            if (each.getPrice() < lowestPrice ){
-                lowestPrice = each.getPrice();
-            }
-
-        }
-
-        for (Car each : carArrayList) {
-
-            if (highestPrice == each.getPrice()){
-                System.out.println("Highest Priced Car: " + each);
-            }
-
-            if (lowestPrice == each.getPrice()){
-                System.out.println("Lowest Priced Car: " + each);
-            }
-
-        }
-
-
-
     }
+
+
+
 }

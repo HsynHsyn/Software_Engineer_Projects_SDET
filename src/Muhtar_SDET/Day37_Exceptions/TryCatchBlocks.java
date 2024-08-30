@@ -37,8 +37,10 @@ public class TryCatchBlocks {
 
         System.out.println("Program3 started");
 
+
+
         try{
-            Thread.sleep(3000);  // Checked exception,
+            Thread.sleep(3000);  // Checked exception
             System.out.println("Try Block");
 
         }catch (InterruptedException e){
