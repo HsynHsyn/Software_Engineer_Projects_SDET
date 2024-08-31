@@ -17,6 +17,7 @@ public class Store {
         Clothes jacket = new Jacket();
         HasHood jacketWithHood = new Jacket();
 
+
         jacket.wear();
         /*
         Reference type decides what is accessible.
@@ -29,6 +30,20 @@ public class Store {
 
         //Solution is downcasting to child reference
         ((Jacket)jacketWithHood).wear();
+
+        System.out.println("===================");
+
+        Jacket myJacket = new Jacket();
+        myJacket.wear();
+        myJacket.putOnHood();
+
+        Clothes myJacketClothes = new Jacket();
+        myJacketClothes.wear();
+
+        HasHood myJacketWithHood = new Jacket();
+        myJacketWithHood.putOnHood();
+
+
 
 
     }
