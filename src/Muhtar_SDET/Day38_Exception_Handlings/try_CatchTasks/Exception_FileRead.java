@@ -11,7 +11,7 @@ public class Exception_FileRead {
 
     public static void main(String[] args) {
 
-        try{
+              try{
             readFile("test2.txt"); // this file has not so it will give an error
            //FileInputStream fileInputStream = new FileInputStream("new file");
         } catch (FileNotFoundException e) {
