@@ -3,6 +3,10 @@ package Saturday_Reviews.week15.throw_keyword;
 public class Website {
     private String url;
 
+    public Website(String url) {
+        this.url = url;
+    }
+
     public String getUrl() {
         return url;
     }
