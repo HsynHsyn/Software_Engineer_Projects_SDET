@@ -328,4 +328,13 @@ IQ: What is the difference between final, finally, finalize()?
 	finalize(): a method called by the garbage collector to help clean the memory
 __________________________________________________________________
 
+Checked Options:
+2 options
+    1. Handle using try catch
+    2. Declare Throws
+
+main{
+try{
+ Thread.sleep(1234);
+}catch
 
