@@ -42,6 +42,30 @@ public class Store {
 
         HasHood myJacketWithHood = new Jacket();
         myJacketWithHood.putOnHood();
+        System.out.println("===================");
+
+        // down Casting to subclass
+        // we are able to access all methods
+        //we just cast the reference
+
+        Jacket myNewJacket = (Jacket) myJacketWithHood;
+        myNewJacket.wear();
+        myNewJacket.putOnHood();
+
+        ((Jacket) myJacketWithHood).wear();
+
+        System.out.println("===================");
+
+        // implementing abstract method using Anonymous class
+        Clothes c = new Clothes() {
+            @Override
+            public void wear() {
+                System.out.println("Wearing some clothes");
+            }
+        };
+        c.wear(); // Wearing some clothes
+
+
 
 
 
