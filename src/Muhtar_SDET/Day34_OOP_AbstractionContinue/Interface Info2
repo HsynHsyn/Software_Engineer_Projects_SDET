@@ -22,7 +22,7 @@ methods) and given by default
         ***important***
 What Interface can not have?
 • An interface can not have instance variables
-• An interface can not have instance methods
+
 • An interface can not have constructors
 • An interface can not have initializer blocks (static and instance)
 • *** We can not create objects from interface

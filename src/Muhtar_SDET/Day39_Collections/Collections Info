@@ -1,0 +1,37 @@
+Collections
+• Defines several classes and interfaces which can be used to represent
+a group of objects as single entity
+• Growable in nature, can increase or decrease the size
+• Can hold different non-primitive data types
+• Standard data structure and there are ready methods to use
+
+Collection
+• Collection interface is considered as root interface of collection framework
+• Collection interface defines the most common methods which are applicable for any
+collection object
+
+Method Name Method Name         Method Name
+size()        isEmpty()         add()
+addAll()      remove()          removeAll()
+removeIf()    contains()        containsAll()
+retainAll()   clear()           toArray()
+
+List Interface
+• Child interface of Collection
+• Duplicates are allowed
+• Insertion order preserved (eklenme sirasi korunur)
+• Has index numbers
+
+ArrayList
+• Implements the List interface
+• Internally uses array
+• Retrieving the element is faster
+not; if you use add() and remove() like this, arraylist performance is getting slower
+    when you are retrieving the element arraylist performance is getting faster
+
+LinkedList Class
+    • Implements the List interface
+    • Internally uses doubly linked list (pointer previous and after element)
+    • Each value will have pointer to the next value
+    • Inserting and deleting the element is faster (pros)
+    . retrieving the element slower than array (cons)
