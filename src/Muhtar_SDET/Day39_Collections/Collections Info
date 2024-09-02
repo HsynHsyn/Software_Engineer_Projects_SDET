@@ -133,3 +133,22 @@ Multi-threading:
 
 Multitasking:
 		two or more process are running
+
+-----------------------------------------------------------------------------------------------
+Day 40;
+
+Queue Interface
+• Child interface of Collection
+• Duplicates are allowed
+• Insertion order not preserved
+• First-in, First out order (FIFO)
+
+PriorityQueue Class
+• Implements the Queue interface
+• Maintains the random order
+• Does not accept null values
+
+ArrayDeque Class
+• Implements the Deque interface
+• Maintain the insertion order
+• Accepts null values
