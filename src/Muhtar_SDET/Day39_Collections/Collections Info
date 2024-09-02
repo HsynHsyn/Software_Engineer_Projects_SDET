@@ -152,3 +152,15 @@ ArrayDeque Class
 • Implements the Deque interface
 • Maintain the insertion order
 • Accepts null values
+-----------------------------------------------------------------------------------------------
+    List                                 Set                              Queue
+Duplicates are allowed          Duplicates are not allowed          Duplicates are allowed
+Insertion order preserved       Insertion order not preserved       Insertion order not preserved
+Has index                       Does not have index                 Does not have index
+-------------------------------------------------------------------------------------------------
+When to use List, Set, and Queue?
+• List: If we want to represent a group of individual objects as a single entity where
+duplicates are allowed, and insertion order preserved
+• Set: If we want to represent a group of individual objects as a single entity where
+duplicates are NOT allowed, and insertion order NOT preserved
+• Queue: If we want to represent a group of individual objects prior to processing
