@@ -155,7 +155,7 @@ ArrayDeque Class
 -----------------------------------------------------------------------------------------------
     List                                 Set                              Queue
 Duplicates are allowed          Duplicates are not allowed          Duplicates are allowed
-Insertion order preserved       Insertion order not preserved       Insertion order not preserved
+Insertion order p reserved       Insertion order not preserved       Insertion order not preserved
 Has index                       Does not have index                 Does not have index
 -------------------------------------------------------------------------------------------------
 When to use List, Set, and Queue?
@@ -164,3 +164,17 @@ duplicates are allowed, and insertion order preserved
 • Set: If we want to represent a group of individual objects as a single entity where
 duplicates are NOT allowed, and insertion order NOT preserved
 • Queue: If we want to represent a group of individual objects prior to processing
+
+-------------------------------------------------------------------------------------------------
+Iterable
+• Parent interface of Collection interface
+• Allows the object to be Iterated by using Iterator
+• Iterator is used when we want to remove elements whilst you iterate over
+a collection
+
+How to use Iterator?
+• We can obtain the Iterator by using the iterator() method of an Iterable
+• Iterator provides the ready methods that can be used while traversing the collections:
+• hasNext( ),   verifying there is a element
+• next( ) ,     to get element
+• remove( ),    remove element
