@@ -1,4 +1,4 @@
-Collections 15:59-1:52
+Collections 09:30-
 • Defines several classes and interfaces which can be used to represent
 a group of objects as single entity
 • Growable in nature, can increase or decrease the size
@@ -35,6 +35,7 @@ LinkedList Class
     • Each value will have pointer to the next value
     • Inserting and deleting the element is faster (pros)
     . retrieving the element slower than array (cons)
+    . NODE base class
 
 Vector Class
 • Implements the List interface
