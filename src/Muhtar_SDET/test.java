@@ -1,4 +1,4 @@
-package Muhtar_SDET.Day40_Collections_Continue;
+package Muhtar_SDET.Day41_Maps;
 
 public class test {
 }
