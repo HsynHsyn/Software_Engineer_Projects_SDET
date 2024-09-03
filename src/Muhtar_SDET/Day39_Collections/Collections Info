@@ -49,8 +49,6 @@ Stack Class
 • Last-in, first out order (LIFO)
 
 
-
-
 Process
 • Programs that are scheduled for execution in the CPU
 • An instance of a program running on a computer.
@@ -113,7 +111,15 @@ Collection (I): size is dynamic, supports non-primitives ONLY
 
 				2.2 TreeSet (C): keeps the sorted order, does not accept null
 
-		3. Queue (I)
+		3. Queue (I): Does not have index number, Allow duplicates. FIFO
+
+        					poll(): returns & removes the first inserted object from the Queue
+
+        				3.1 PriorityQueue (C): order is random, does not accept null
+
+        				3.2 ArrayDequeue (C): keeps the insertion order, does not accept null
+
+        				3.3 LinkedList (C): keeps the insertion order, accepts null, Has index number
 
 Synchronized: multiple threads are being executed one thread at a time
 
@@ -146,7 +152,7 @@ Queue Interface
 PriorityQueue Class
 • Implements the Queue interface
 • Maintains the random order
-• Does not accept null values
+• Does not accept null valuejs
 
 ArrayDeque Class
 • Implements the Deque interface
