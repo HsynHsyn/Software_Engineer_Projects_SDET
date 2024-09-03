@@ -1,0 +1,14 @@
+Array vs Collection: both supports non primitives
+
+		Array: Size is fixed
+			   Supports both primitives & non-primitives
+			   Can be mult-dimensional
+			   Mutable
+		   *** Faster than Collection (faster because you can reach arrays element randomly)
+
+		Collection: Size is dynamic
+					Supports non-primitives ONLY
+					Can not be multi-dimensional
+					Mutable
+		        ***	Ready methods
+------------------------------------------------------------------------------------------------

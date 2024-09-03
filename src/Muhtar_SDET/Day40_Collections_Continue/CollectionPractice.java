@@ -11,6 +11,7 @@ public class CollectionPractice {
         collection.add(100);
         collection.addAll(Arrays.asList(100,2000,100,3000,500,600));
 
+
         System.out.println(collection);
         //down casting
         System.out.println(((ArrayList<Integer>) collection).get(2)); // gives error, we dont have get() reference type

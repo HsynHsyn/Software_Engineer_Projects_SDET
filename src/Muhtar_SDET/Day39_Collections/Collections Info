@@ -152,7 +152,7 @@ Queue Interface
 PriorityQueue Class
 • Implements the Queue interface
 • Maintains the random order
-• Does not accept null valuejs
+• Does not accept null values
 
 ArrayDeque Class
 • Implements the Deque interface
