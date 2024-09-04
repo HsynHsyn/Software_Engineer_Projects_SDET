@@ -15,9 +15,11 @@ public class QueueDemo {
 
         System.out.println(queue1);
         int num1 = queue1.poll();  // ==> FIFO // first element is removed
+        //int num2 = queue1.poll();
+
         System.out.println(queue1);
 
-        System.out.println("---------------------------------------------------------");
+        System.out.println("-----------------------xxxxx----------------------------------");
 
         Queue<Integer> queue2 = new ArrayDeque<>(); // insertion order
 

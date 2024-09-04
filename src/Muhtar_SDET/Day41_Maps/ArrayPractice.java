@@ -1,9 +1,6 @@
 package Muhtar_SDET.Day41_Maps;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 public class ArrayPractice {
     public static void main(String[] args) {
@@ -33,8 +30,20 @@ public class ArrayPractice {
         System.out.println(Arrays.toString(arrayOfList));
 
         Set<Integer>[] arrayOfSets = new Set[5]; // datatype of variable is Set
-
        // System.out.println(Arrays.toString(arrayOfSets)); // [null, null, null, null, null]
+
+        arrayOfSets[0] = new LinkedHashSet<>();
+        arrayOfSets[1] = new LinkedHashSet<>();
+        arrayOfSets[2] = new LinkedHashSet<>();
+        arrayOfSets[3] = new LinkedHashSet<>();
+        arrayOfSets[4] = new LinkedHashSet<>();
+
+        System.out.println(Arrays.toString(arrayOfSets));
+
+        arrayOfSets[2].addAll(Arrays.asList(1,2,3,4));
+        System.out.println(Arrays.toString(arrayOfSets));
+
+
 
 
 

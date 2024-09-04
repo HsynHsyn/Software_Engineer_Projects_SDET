@@ -12,3 +12,56 @@ Array vs Collection: both supports non primitives
 					Mutable
 		        ***	Ready methods
 ------------------------------------------------------------------------------------------------
+Map
+• Data structure based on the key + value pairs
+• Does not have IS A relation with Collection
+• Size can be increased or decreased so Size is dynamic
+• Key can not be duplicated, it is unique
+. Just store the data
+. Map is Interface
+. KEYs serves like index number
+
+HashMap Class
+• Implements the Map interface
+• Maintains the random order
+• Accepts null value as a key
+
+LinkedHashMap Class
+• Child class of HashMap
+• Maintains the insertion order
+• Accepts null value as a key
+
+TreeMap Class
+• Implements the SortedMap Interface
+• Maintains the sorted (Ascending) order
+• Does not accept null as a key
+. comperes the keys, belongs to ASCII table
+
+Hashtable Class
+• Implements the Map interface
+• Maintains the random order
+• Does not accept null as a key
+• Synchronized (Thread-Safe)
+
+             Methods Of Map
+Method               Method      Method
+---------------------------------------
+put()                get()       size()
+replace()            remove()    containsKey()
+containsValue()      isEmpty()   equals()
+clear()              putAll()    keySet()
+values()             entrySet()  getKey()
+getValue()           setValue()
+----------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
