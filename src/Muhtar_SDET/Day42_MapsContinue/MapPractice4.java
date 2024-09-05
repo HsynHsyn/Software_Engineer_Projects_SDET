@@ -1,13 +1,15 @@
 package Muhtar_SDET.Day42_MapsContinue;
 
+import Muhtar_SDET.Day31_Method_Overriding.PersonTask.Developer;
+import Muhtar_SDET.Day34_OOP_AbstractionContinue.Car;
+
 import java.time.LocalDate;
-import java.util.Arrays;
 import java.util.LinkedHashMap;
+import java.util.List;
 import java.util.Map;
 
-public class MapPractice3 {
+public class MapPractice4 {
     public static void main(String[] args) {
-
         Map<String, Object> person1 = new LinkedHashMap<>(); // just contains the information
         // Object referans all data types (String , Character, integer)
         person1.put("name", "Arthur");
@@ -28,8 +30,6 @@ public class MapPractice3 {
         person2.put("salary", 100000);
         person2.put("hired_date", LocalDate.of(2022,8,15));
         person2.put("married", true);
-
-        System.out.println(person2.get("name"));
 
         Map<String, Object> person3 = new LinkedHashMap<>();
         person3.put("name", "Iskender");
@@ -58,38 +58,49 @@ public class MapPractice3 {
         person5.put("hired_date", LocalDate.of(2022,10,15));
         person5.put("married", true);
 
-        Map<String, Object>[] arrayOfMap = new Map[5];
-        //System.out.println(Arrays.toString(arrayOfMap)); // [null, null, null, null, null]
+        //Map of maps
+        Map<Integer, Map<String, Object> >  mapOfMaps = new LinkedHashMap<>();
+        mapOfMaps.put(0, person1);
+        mapOfMaps.put(1, person2);
+        mapOfMaps.put(2, person3);
+        mapOfMaps.put(3, person4);
+        mapOfMaps.put(4, person5);
 
-        arrayOfMap[0] = person1;
-        arrayOfMap[1] = person2;
-        arrayOfMap[2] = person3;
-        arrayOfMap[3] = person4;
-        arrayOfMap[4] = person5;
+        System.out.println("mapOfMaps = " + mapOfMaps);
 
-        arrayOfMap[1].replace("salary", ( (Integer)arrayOfMap[1].get("salary") ) + 10000 );
-        arrayOfMap[0].replace("name","Hakan");
+        System.out.println("..........................................................");
 
-        System.out.println(Arrays.toString(arrayOfMap));
+        System.out.println(mapOfMaps.get(1));
+        mapOfMaps.get(1).replace("salary", 120000);
+        //System.out.println("mapOfMaps = " + mapOfMaps);
 
-        System.out.println("---------------------------------------------------");
-        int count = 0;
-        for (Map<String, Object> eachMap : arrayOfMap) {
-            for (Map.Entry<String, Object> eachEntry : eachMap.entrySet()) {
+        System.out.println("..........................................................");
+
+        System.out.println(mapOfMaps.values()); // all values
+
+        System.out.println("..........................................................");
+
+        for (Map<String, Object> eachValue : mapOfMaps.values()) { // each values
+            for (Map.Entry<String, Object> eachEntry : eachValue.entrySet()) {
                 if (eachEntry.getKey().equals("salary")){
-                    //double salary = (Integer) eachEntry.getValue(); // every salary value are Integer, we can not use if they are both Integer and Double
-                    if ((Integer ) eachEntry.getValue() < 100000){ // eachEntry.getValue() value type is Object
-
-                        count++;
-
-                    }
+                    eachEntry.setValue((Integer)eachEntry.getValue() + 10000);
                 }
-
+                
             }
-
         }
 
-        System.out.println("count = " + count);
+        System.out.println("mapOfMaps = " + mapOfMaps);
+
+        System.out.println("..........................................................");
+
+       //Map< Map<String, Integer>, Map<String, Integer> > mapOfMaps2 = new LinkedHashMap<>();
+
+        Map< int[], List<Integer> > map2 = new LinkedHashMap<>();
+
+        Map<Developer, Car> map3 = new LinkedHashMap<>();
+
+
+
 
 
     }

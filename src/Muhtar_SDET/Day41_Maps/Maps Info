@@ -98,10 +98,9 @@ Methods of Map:
 	values(): returns all the values of the map. return type is Collection
 
 	entrySet(): returns all the entries (Entry: key & value) pf the map
-
 				getKey()
 				getValue()
-				setValue(newValue)
+				setValue(newValue) // this three method belong to entrySet().
 
 				16:42
 
