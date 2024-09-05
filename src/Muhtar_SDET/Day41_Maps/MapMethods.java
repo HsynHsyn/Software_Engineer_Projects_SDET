@@ -28,7 +28,7 @@ public class MapMethods {
 
         // get(key): returns the value of the specified key
         System.out.println(map.get("A04"));
-
+        System.out.println("---------------------------------");
         // replace(key, newValue): replaces the value of the specified key with the new value // FASTER than put() to change values
         map.replace("CO2", "Aseel");
         System.out.println(map);
