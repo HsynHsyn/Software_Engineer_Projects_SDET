@@ -91,7 +91,19 @@ clear()              putAll()    keySet()
 values()             entrySet()  getKey()
 getValue()           setValue()
 ----------------------------------------------------------------------------------------------------------
+Methods of Map:
 
+	keySet(): returns all the keys of the map. return type is Set
+
+	values(): returns all the values of the map. return type is Collection
+
+	entrySet(): returns all the entries (Entry: key & value) pf the map
+
+				getKey()
+				getValue()
+				setValue(newValue)
+
+				16:42
 
 
 
