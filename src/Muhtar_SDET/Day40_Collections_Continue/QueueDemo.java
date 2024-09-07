@@ -14,6 +14,8 @@ public class QueueDemo {
         //queue1.addAll(Arrays.asList(null, null, null)); // gives error nullpointerexception
 
         System.out.println(queue1);
+        System.out.println("-----------------------xxxxx----------------------------------");
+
         int num1 = queue1.poll();  // ==> FIFO // first element is removed
         //int num2 = queue1.poll();
 
@@ -27,11 +29,11 @@ public class QueueDemo {
         queue2.addAll(Arrays.asList(10,200,300,40,90));
         queue2.addAll(Arrays.asList(10,200,300,40,90));
 
-        System.out.println(queue2);
+        System.out.println("queue2 = " + queue2);
 
         queue2.poll(); // FIFO
 
-        System.out.println(queue2);
+        System.out.println("queue2" + queue2);
 
         System.out.println("---------------------------------------------------------");
 
@@ -41,7 +43,7 @@ public class QueueDemo {
         queue3.addAll(Arrays.asList(10,200,300,40,90));
         queue3.addAll(Arrays.asList(null, null, null)); //LinkedList accepts null
 
-        System.out.println(queue3);
+        System.out.println("queue3 " + queue3);
 
         queue3.poll();
 

@@ -23,20 +23,22 @@ public class ListDemo {
         vector.add(200);
         vector.add(300);
 
+
         vector.get(0);
-        System.out.println("--------------------------------------------");
+        System.out.println("----------------get----------------------------");
 
         Stack<Integer> stack = new Stack<>();
         stack.add(100);
         stack.add(200);
         stack.add(300);
 
-        stack.get(0);
+        System.out.println(stack.get(0));
 
         System.out.println(stack);
         // pop() brings last element and remove last element at the same time
-        int lastElement = stack.pop();
-        System.out.println(stack);
+        stack.pop();
+        stack.pop();
+        System.out.println("test " + stack);
 
         // this continuous to remove
         int lastSecondElement = stack.pop();

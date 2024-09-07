@@ -18,6 +18,7 @@ public class Task1_RemoveDuplicates {
         List<Integer> nums2 = new ArrayList<>(Arrays.asList(20, 15, 10, 20, 30, 10, 20, 15, 0));
         List<Integer> unique2 = new ArrayList<>();
 
+
         for(int each : nums2){
             if(!unique2.contains(each)){
                 unique2.add(each);

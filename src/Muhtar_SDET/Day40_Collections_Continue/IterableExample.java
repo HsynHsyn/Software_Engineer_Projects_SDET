@@ -9,6 +9,7 @@ public class IterableExample {
         list.addAll(Arrays.asList(1,2,3,5,8,6,84,5,8,5,9,5,8,5,89,90));
 
 
+
         // not able to remove
        /* for (Integer each : list) { // gives an error
             if (each < 5 ){
@@ -19,28 +20,33 @@ public class IterableExample {
 
         // not able to remove
         for (int i = 0; i < list.size(); i++) {
-            if (list.get(i) < 5){
+            if (list.get(i) < 8){ //i = 0
                 list.remove(i);
+                System.out.println("size: "+ list.size());
             }
 
         }
         System.out.println(list);
 
-        System.out.println("-------------------------------------------------------------");
+        System.out.println("--------------------test-----------------------------------------");
         List<Integer> list2 = new ArrayList<>();
         list2.addAll(Arrays.asList(1,2,3,5,8,6,84,5,8,5,9,5,8,5,89,90));
+        System.out.println("list2 = " + list2);
 
-        System.out.println(list2);
 
-       Iterator<Integer> it = list2.iterator();
+        Iterator<Integer> it = list2.iterator();
 
+        int count = 0;
        while (it.hasNext()){
+           count ++;
           Integer each =  it.next();
+           System.out.println("each :" + each);
           if (each < 5){
               it.remove();
           }
        }
         System.out.println(list2);
+        System.out.println(count);
 
         System.out.println("-------------------------------------------------------------");
 

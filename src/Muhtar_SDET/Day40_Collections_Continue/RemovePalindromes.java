@@ -38,7 +38,7 @@ public class RemovePalindromes {
                 Arrays.asList("Java", "Python", "Cydeo", "Car", "Level", "civic", "radar", "kayak", "reviver", "racecar", "madam")
         );
 
-       // names2.removeIf(p -> StringUtility.reverse(p).equalsIgnoreCase(p));
+       names2.removeIf(p -> StringUtility.reverse(p).equalsIgnoreCase(p));
         names2.removeIf(p -> new StringBuilder(p).reverse().toString().equalsIgnoreCase(p));
         System.out.println(names2);
 

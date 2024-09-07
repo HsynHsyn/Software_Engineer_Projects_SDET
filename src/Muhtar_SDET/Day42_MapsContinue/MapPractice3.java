@@ -2,6 +2,7 @@ package Muhtar_SDET.Day42_MapsContinue;
 
 import java.time.LocalDate;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
@@ -90,6 +91,8 @@ public class MapPractice3 {
         }
 
         System.out.println("count = " + count);
+
+
 
 
     }

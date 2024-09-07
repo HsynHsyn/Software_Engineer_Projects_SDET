@@ -13,6 +13,8 @@ public class SetDemo {
         set1.add(null);
         System.out.println(set1);
 
+        System.out.println("-----------------------------------");
+
         Set<Integer> set2 = new LinkedHashSet<>(); // keeps insertion order accepts null key
 
 
