@@ -1,0 +1,286 @@
+
+Git & GitHub
+
+	git: version control system
+
+	GitHub: online platform that hosts our remote repositories
+
+	local repository: folder on your computer that keeps track of the changes
+	 (hidden .git folder)
+
+	remote repository: folder online that keeps track of the changes, this is where others can also share their changes
+		-> we are using GitHub to host these repositories [GitHub.com](http://github.com), GitLab, Gitbucket
+
+		-> Other Version control: SVN, CVS
+
+File status in Git:
+	un-versioned file: not being kept track of
+
+	clone: create a copy of a remote repository to your local computer
+		go to the remote repository on github
+		click the green code button and copy the given https link
+		in intelliJ go to file -> new -> project from version control
+		paste the url
+_____________________________________________________________
+
+if git asks for token while cloning:
+	Click on Username > Settings > Developer Settings > Personal Access Tokens > Tokens > New Classic token > Select all options > Generate > Set expiration date > Copy the token
+
+Access Token -> Long string that represents your credentials.
+It is generated based on your credentials and name
+
+
+--------------------------
+
+Local Flow (Upstream: local -> remote)
+
+	New project --> java project -> b36-git-review --> finish
+
+	VCS -> Enable Version Control Integration
+		(creating the local repository)
+
+	Create git ignore
+
+	- .gitignore: has the ability to ignore, or not track changes of, certain files or folders
+
+		Note: You can not un-track a file already been tracked using .gitignore file. That's why the .gitignore file is usually created in the beginning of the project. If you need to untrack a file and ignore it you will need to run a command (we will talk about the commands later)
+
+			files that are often ignored in a java project:
+				.idea
+				out
+				*.iml
+
+		Option 1) right click on project -> new -> file -> .gitignore
+
+		Option 2) you select the file/s you want to add to git ignore -> right click on the files -> git -> add to gitignore
+
+	Add some files or make changes
+
+	- commit: saving your changes to the local repository
+		changes in files
+		commit message (what changes were made)
+		the author (who made the commit)
+
+	Q: Where are the changes? Are they on the remote yet?
+
+__________________________________________________________________
+
+Connect to remote
+
+Sharing the project
+
+	Sharing by going to git -> github -> share on github
+
+		- creates a remote repository on github
+		- link our project with the remote repository
+		- push the changes so far
+
+	or manually:
+
+		- go to github.com -> repositories
+		- create a new repository
+		- take the link from github, then go to intelliJ, go to git -> manage remotes -> click the plus icon -> add the url
+		- push the commits
+
+	- push: sending the commits(changes) from our local repository to our remote repository
+
+practice flow of commit & push (local -> remote)
+		create a new package if needed (not tracked)
+		create a new file
+		commit that file
+		create another new file
+		commit that file
+		push all changes to the remote
+__________________________________________________________________
+
+Downstream Flow (remote -> local)
+
+	our local projects need to always be updated to be the same as the remote, so we should always get new changes to our projects before trying to share any of our own changes
+
+	fetch: will bring the commit data without merging the changes into the project
+
+	update: gets the new changes for that branch
+
+	pull: more functionality to control which branch you pull from and to
+		does the fetching and merge at the same time
+
+practice flow of updating the project (remote -> local )
+		go to the project on github
+		manually add a file on github - to simulate someone else making the change, we can do proper team collaboration in next classes
+		commit that file on the bottom of the page
+
+		locally test fetching, to see the information, and then update our project to get the changes
+_______________________________________________________________
+
+Reset
+	Right click on the commit you want to go back to and select Reset Current Branch to Here
+
+	Git Reset options:
+		Soft: file doesn't update, but changes are staged automatically
+		Mixed: file doesn't update, but changes are not staged automatically
+		Hard: file will lose all changes until the selected commit
+
+	Revert vs Reset:
+		Revert is for pushed commits, history is preserved
+			creates new commit undoing the changes
+
+		Reset is for local commits. The history is changed
+			moves the head back to the commit
+__________________________________________________________________
+
+Branching
+
+	Branching in git is like opening a new timeline for new changes without any impact to the original
+		+ light weight & easy to create
+
+	checkout: switch the branch/ move the HEAD
+
+	HEAD: current branch you are looking at
+
+	Merge: Combine changes from branches together
+
+Practice flow with branches
+	java-live-review project
+	Make sure you are on master branch:
+
+	-Checked commit window, make sure it is clean. Committed any changes
+	-Pull master branch, make sure it is up to date.
+
+	-right click on the master branch -> new branch from master
+	make sure you also checkout to the new branch
+
+	branch: "lists-practice"
+
+	make new changes + commit
+	pushed from my local name branch to a new origin name branch
+	go to github and create a pull request to merge our origin name branch to origin master branch
+	merge the branches
+__________________________________________________________________
+
+Pull Request
+
+	What is a pull request: a step between merging branches to allow review of the changes
+
+	in real project, you cannot directly merge branches, there needs to be some kind of review process, based on company practices it might change but for example at least 2 people needs to review before merging. Pull requests can help with this process
+
+	1) go to remote repository
+		find the pull request menu
+		create a new pull request
+			master(base) <- name branch (compare)
+				compare/merge the changes in the name branch to the master branch
+
+		assign a reviewer and they will comment, discuss, and then approve changes
+
+		after pull request is approved the branches are merged
+
+	2) changes are often detected by GitHub so most of the time you will see a suggestion to make a pull request after a push
+
+__________________________________________________________________
+
+Merge Conflict
+
+	Merge conflict occur when trying to merge but there is some difference between branches or repositories
+
+	What's the best way to handle conflicts?
+		Avoid them
+
+		But if a conflict occurs we need to compare the two files and resolve it. IntelliJ has a good UI window to resolve conflicts
+
+		accept yours					result 				accept theirs
+
+		// html for cart page								// team members line
+
+		3 options to resolve the conflict
+			you accept your changes
+			you accept their changes
+			fix the conflict in the middle with mix of the code + merge
+_______________________________________________________________
+
+
+List -> ordered collection
+	 -> allows duplicate and null values
+
+implementations:
+	ArrayList
+	LinkedList
+	Vector
+		-> Stack
+
+ArrayList -> is most popular implementation of List.
+		  -> based on Array (internally uses dynamic array)
+
+LinkedList -> is based on Node objects linked together
+
+	Performance:
+		-Reading from index:
+			ArrayList is faster
+		-Adding to list:
+			LinkedList is faster
+		-Deleting:
+			LinkedList is faster
+		-Memory/Space usage:
+			ArrayList is lighter, since internally uses array
+
+Vector -> array based implementation. It is Thread-safe/Syncronized.
+
+Stack -> extends Vector, also array based implementation.
+	LIFO -> Last in First out based implementation.
+=============================
+
+Bus with capacity for 10 ppl:
+
+	At station 4 people got onto bus.
+
+Bus capacity - 10
+size - 4
+--------
+
+List capacity -> how many elements internall array size
+List size -> how elements we added so far
+
+--------
+
+Map -> is Key+Value pair data structure
+	-> Keys are always unique
+	-> Values can be duplicated
+HashMap -> default implementation. Key+Value format. does not remember insertion order
+LinkedHashMap => maintains insertion order
+
+TreeMap also implements SortedMap, so the keys are sorted in natural order
+    -> does not allow null value
+
+HashTable: a synchronized legacy class. The order of entries is random and null is not allowed as a key or value
+
+implements Map and extends Dictionary
+HashMap vs HashTable:
+    -> Both are implementations of Map interface and KEY+VALUE data structure
+    -> HashMap is not thread safe
+    -> HashTable is thread safe
+    -> HashMap allows 1 null key and any number of null values
+    -> HashTable does not allow any null key or value
+
+
+set is collection of unique elements
+- does not allow duplicates
+- does not have indexes since it is unordered data structure
+
+Implementations:
+    HashSet -> default usage
+    LinkedHashSet -> keeps the insertion order
+HashSet -> internally uses KEYs of HASHMAP.
+LinkedHashSet -> keeps insertions order. Extends HashSet.
+    Internally using LinkedHashMap's keys
+TreeSet -> implements SortedSet interface
+    - maintains natural order (sorted)
+    - based on Keys of TreeMap
+
+
+Queue is based on First In - First Out structure
+Implementing classes:
+    PriorityQueue -> maintains priority ordering
+    ArrayDeque -> we can access elements from both sides.Also implements Deque interface
+
+
+
+
+
