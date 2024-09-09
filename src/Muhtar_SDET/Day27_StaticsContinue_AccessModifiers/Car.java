@@ -1,7 +1,7 @@
 package Muhtar_SDET.Day27_StaticsContinue_AccessModifiers;
 
 public class Car {
-// only be inner Class can be static other can never be static
+// *** only be inner Class can be static other can never be static
     public String make , model, color;
     public int year;
     public double price;
@@ -21,7 +21,7 @@ public class Car {
     public static class StaticInnerClass{ // *** only accepts outer class static members ***
         public void method(){
             System.out.println(wheels);
-            // System.out.println(make); does not accepts because make is instance of Car class
+           // System.out.println(make);// does not accepts because make is instance of Car class
         }
 
     }

@@ -62,6 +62,10 @@ public class Phone {
         return color;
     }
 
+    public static void test(){ // can use static method in super class
+        System.out.println("test");
+    }
+
     public void setColor(String color) {
         // List<String> list = Arrays.asList(array);
         String[] colors = {"Black", "White", "Silver", "Gold", "Pink", "Blue", "Red","Green","Gray"};

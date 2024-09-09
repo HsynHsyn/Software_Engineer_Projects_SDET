@@ -5,7 +5,7 @@ import java.util.Arrays;
 
 //the more object you create the more copy of instance variable create at the same time
 public class StudentGroup { // StudentsGroup HAS A Student
-    // instance variables
+    // instance variables (fields)
     public String groupName;
     public int groupId;
     public ArrayList<Student> students; // we can use in here also , students = new ArrayList<>();

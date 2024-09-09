@@ -66,7 +66,7 @@ public abstract class Employee {
         this.salary = salary;
     }
 
-   public abstract void work();
+
 
 
     public String toString() {

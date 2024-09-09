@@ -3,7 +3,7 @@ package Muhtar_SDET.Day26_ConstructorsContinue_StaticsIntro;
 public class ConstructorCalls2 {
 
     public ConstructorCalls2() {
-        // this(9); gives error
+       // this(9); //gives error // constructor can not call itself
 
         System.out.println("Default");
 
