@@ -43,7 +43,7 @@ public class Circle {
             System.err.println("Invalid Object");
             System.exit(1);
         }
-        if (radius == ( (Circle)obj ).radius){ // if the current circle`s radius is equal to the given circle`s radius , then two circlesequal
+        if (radius == ( (Circle)obj ).radius){ // if the current circle`s radius is equal to the given circle`s radius , then two circles equal
             return true;
 
         }

@@ -14,8 +14,8 @@ public class Restaurant {
         this.owner = owner;
         this.location = location;
         this.numberOfStars = numberOfStars;
-        Servers = new ArrayList<>();
-        Chefs = new ArrayList<>();
+        this.Servers = new ArrayList<>(); //buraya this. ekledim eger hata alisan sil
+        this.Chefs = new ArrayList<>(); ////buraya this. ekledim eger hata alisan sil
     }
 
     public void hireServer (Server server){
