@@ -8,7 +8,7 @@ public class Teacher extends Employee{
         super(name, age, gender, id, jobTitle, salary);
    }
 
-    @Override
+    //@Override
     public void work() {
         System.out.println(getName() + " is teaching");
 

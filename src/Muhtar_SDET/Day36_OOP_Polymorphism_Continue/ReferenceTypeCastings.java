@@ -54,7 +54,7 @@ public class ReferenceTypeCastings {
         System.out.println("------------------------------------------------------------");
 
         Employee employee = new Developer("Hakan", 15,'M', "D01", "Developer", 80000, "Java");
-        employee.work();
+        //employee.work();
 
         System.out.println(( (Developer)employee ).getProgrammingLanguage());
 
@@ -75,12 +75,12 @@ public class ReferenceTypeCastings {
         Employee employee3 = new Driver("Halime", 35,'M', "D01", "Truck Driver", 50000);
         Employee employee4 = new Tester("Huseyin", 35,'M', "D01", "Truck Driver", 50000);
 
-        employee1.work(); // if reference type (Employee) and object type (Teacher) has the work() method, teacher`s work() method works,
+        //employee1.work(); // if reference type (Employee) and object type (Teacher) has the work() method, teacher`s work() method works,
                           // if it has not work() method Employee work() method runs
                          // if overridden,  overridden version works
-        employee2.work();
-        employee3.work();
-        employee4.work();
+        //employee2.work();
+        //employee3.work();
+        //employee4.work();
 
     }
 }

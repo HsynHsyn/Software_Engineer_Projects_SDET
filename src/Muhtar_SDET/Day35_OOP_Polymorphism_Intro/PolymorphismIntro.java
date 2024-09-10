@@ -65,7 +65,7 @@ public class PolymorphismIntro {
         // benefit: more specify,
         Employee[] employees = {teacher, developer, driver};
         Employee obj = new Developer("Hakan", 15,'M', "D01", "Developer", 80000, "Java");
-        obj.work();
+        //obj.work();
         // if the methods in common both Employee and Developer obj.work(); implements Developer class method
      System.out.println("------------------------------------------------------");
 
