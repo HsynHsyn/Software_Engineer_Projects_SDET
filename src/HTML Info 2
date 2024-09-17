@@ -1,0 +1,88 @@
+HTML DAY 1
+- Today's schedule:
+1- Review of important topics from previous class
+2- Learn and practice more of the commonly used important tags
+------------------------------------------------------------
+- What is front-end?
+- What user sees and interacts with is called front-end of a
+web application.
+- GUI : Graphic User Interface
+- UI : User Interface
+- What is back-end?
+- Back-end is everything other than the front-end.
+- Back-end constctucts all the business logic, and
+calculations, and performance etc.
+- Database, Servers, API
+- What is HTML?
+- HTML is HyperText Markup Language
+- What is HTML used for?
+- HTML is used to create certain structure for the web
+applications.
+- Is HTML a programming language?
+- No. It is a mark up language.
+- What is a mark up language? ***
+- Markup languages are created using mark-up tags.
+- What is a mark up tag?
+- Mark up tags are containers that determine how the content
+of given element will be displayed.
+"This is my text."
+<p> "This is my text." </p>
+<h1> "This is my text." </h1>
+<h6> "This is my text." </h6>
+- How many different types of TAGS we have?
+- 2 types of tags.
+#1- Paired tag:
+- Paired tags have an opening and closing.
+syntax:
+<openingTag> text goes here </closingTag>
+ex: p, h, ul, ol, li, strong, em, u, html, body, head
+#2- Unpaired tag:
+- Unpaired tags, aka, SELF CLOSING tag.
+- It has only 1 part.
+</selfClosing>
+ex: </br>, </img src="">
+- What kind of structure every html page must follow?
+1- Doctype declaration
+2- <html> </html> : this is parent/ascendent of all web
+elements
+3- <head> </head> :
+- Everything that is not supposed to be displayed on
+the page
+ex : links, title etc.
+4- <body> </body>
+- Everything we want to display on the page goes in
+the body tag.
+- What is <title> tag, and why is it used?
+- Title is what comes up when we search something in a search
+engine
+- Title defines different pages of a web application
+- Title is only displayed in the browser tab visually
+- It is not in the body itself.
+- p:
+- p tag is used for paragraph creation.
+- it is a block element
+- What is block element?
+- Block element means the element will take all the space from
+left to right side of the html page.
+- h:
+- goes from h1-h6
+- used from bigger to smaller headers
+- What is an ATTRIBUTE?
+- Attributes provide additional information about the given
+tag.
+- We can have as many attributes as we want.
+- Attributes will always go inside of the opening tag itself.
+</img src="">
+<p attribute="value"> text here </p>
+syntax:
+<openingTag attributeName1="attributeValue1"
+attributeName2="attributeValue2"> text </closingTag>
+ex: <p style="color:red"> Today is a good day. </p>
+#1- What is the tag we use for this example?
+- <p>
+#2- What is the text of the given web element?
+- Today is a good day.
+#3- What is the attribute name we used in the given web element?
+- attribute name = style
+#4- What is the attribute value?
+- color:red
