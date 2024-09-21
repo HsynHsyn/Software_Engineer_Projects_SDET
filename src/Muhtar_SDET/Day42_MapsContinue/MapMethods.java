@@ -20,13 +20,15 @@ public class MapMethods {
         System.out.println("--------------------------------");
 
         //putAll(); it takes another map and add to the new map
-        Map<String, String> employees = new LinkedHashMap<>();
+        Map<String, String> employees = new TreeMap<>();
 
         //employees.putAll("Test", "Test2");// gives error
+        employees.putAll(map);
+        //map.putAll(employees);
         System.out.println(employees);
 
-        System.out.println(map == employees); // false
-        System.out.println(map.equals(employees)); // true // equals can not ignore order of element
+//        System.out.println(map == employees); // false
+//        System.out.println(map.equals(employees)); // true // equals can not ignore order of element
 
 
 

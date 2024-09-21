@@ -18,7 +18,7 @@ public class MapPractice2 {
         person1.put("hired_date", LocalDate.of(2022,12,15));
         person1.put("married", true);
 
-        System.out.println(person1);
+        //System.out.println(person1);
 
         Map<String, Object> person2 = new LinkedHashMap<>();
         person2.put("name", "Nora");
@@ -29,7 +29,7 @@ public class MapPractice2 {
         person2.put("hired_date", LocalDate.of(2022,8,15));
         person2.put("married", true);
 
-        System.out.println(person2.get("name"));
+        //System.out.println(person2.get("name"));
 
         Map<String, Object> person3 = new LinkedHashMap<>();
         person3.put("name", "Iskender");
@@ -46,7 +46,7 @@ public class MapPractice2 {
         person4.put("age", 30);
         person4.put("job_title", "Java- Developer");
         person4.put("salary", 99000);
-        person4.put("hired_date", LocalDate.of(2022,8,15));
+        person4.put("hired_date", LocalDate.of(2024,8,15));
         person4.put("married", true);
 
         Map<String, Object> person5 = new LinkedHashMap<>();
@@ -55,22 +55,38 @@ public class MapPractice2 {
         person5.put("age", 30);
         person5.put("job_title", "Back-End- Developer");
         person5.put("salary", 99000);
-        person5.put("hired_date", LocalDate.of(2022,10,15));
+        person5.put("hired_date", LocalDate.of(2020,10,15));
         person5.put("married", true);
 
+
+
+        System.out.println("---------------------");
+
+        person5.forEach((k,v) -> System.out.println(k + " = " + v));
+        System.out.println("......................xxx................................");
+
+
         // list of map
-        List<Map<String , Object>> listOfMaps = new ArrayList<>(); // arraylist object only accepts Map object
+        //          String, intrger, Customer
+        List< Map<String , Object> > listOfMaps = new ArrayList<>(); // arraylist object only accepts Map object
         listOfMaps.add(person1);
         listOfMaps.add(person2);
-       listOfMaps.addAll(Arrays.asList(person3,person4,person5));
+        listOfMaps.addAll(Arrays.asList(person3,person4,person5));
+
+        for (Map<String, Object> listOfMap : listOfMaps) {
+            System.out.println(listOfMap);
+        }
+
+        System.out.println("......................listOfMap................................");
 
         System.out.println(listOfMaps);
-        System.out.println("......................................................");
-        for (Map<String, Object> eachMap : listOfMaps ){
-            System.out.println(eachMap);
-            for (Map.Entry<String, Object> eachEntry : eachMap.entrySet()) {
-                System.out.println(eachEntry);
+        System.out.println("......................list................................");
 
+
+        for (Map<String, Object> eachMap : listOfMaps ){
+            //System.out.println(eachMap);
+           for (Map.Entry<String, Object> eachEntry : eachMap.entrySet()) {
+                System.out.println(eachEntry); // getting keys and values
             }
         }
 
@@ -81,9 +97,9 @@ public class MapPractice2 {
             for (Map.Entry<String, Object> eachEntry : eachMap.entrySet()) {
                 if (eachEntry.getKey().equals("hired_date")){
                    if (( (LocalDate)eachEntry.getValue()).getYear() == 2022 ){
-                        //System.out.println(eachEntry);
-                        // System.out.println(eachMap); //all info about person2
-                        System.out.println(eachMap.get("name"));
+                        System.out.println(eachEntry);
+                        // System.out.println(eachMap); all info about person2
+                        //System.out.println(eachMap.get("name"));
                     }
 
                 }
@@ -91,6 +107,20 @@ public class MapPractice2 {
         }
 
         System.out.println(".....................................................");
+        for (Map<String, Object> eachMap : listOfMaps) {
+            for (Map.Entry<String, Object> eachEntry : eachMap.entrySet()) {
+                if (eachEntry.getKey().equals("job_title")){
+                    if (( eachEntry.getValue().equals("job_title"))){
+                        System.out.println(eachEntry);
+                        // System.out.println(eachMap); all info about person2
+                        //System.out.println(eachMap.get("name"));
+                    }
+
+                }
+            }
+        }
+
+        System.out.println("-------------------------------------------------------");
 
 
         listOfMaps.get(0).replace("name","Vasyl");

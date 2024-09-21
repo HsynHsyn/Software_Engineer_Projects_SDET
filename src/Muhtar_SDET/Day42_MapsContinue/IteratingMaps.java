@@ -14,6 +14,9 @@ public class IteratingMaps {
         map.put("Auron", 85000);
         map.put("Brett", 99000);
 
+
+        System.out.println("====================================");
+
         // iterating the map by the keys
         for (String eachKey : map.keySet()) {
             //System.out.println(eachKey);

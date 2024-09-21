@@ -3,7 +3,10 @@ package Muhtar_SDET.Day04_Primitive_Castings_Concatenation;
 public class String_Concatenation {
     public static void main(String[] args) {
 
-        String name= "Alexander";
+        Object name= new String ("Alexander");
+        String name1 = (String) name;
+        System.out.println(name1);
+
         int age = 35;
         int salary=85_000; // _ is the same as . but we can not use . in java
         int number= 100_000_000; // 100000000

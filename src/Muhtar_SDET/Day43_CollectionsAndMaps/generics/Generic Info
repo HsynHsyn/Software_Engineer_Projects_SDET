@@ -1,0 +1,4 @@
+
+- Parameterized types
+- Allows us reuse the same code with different types
+- applied to method, class and interface

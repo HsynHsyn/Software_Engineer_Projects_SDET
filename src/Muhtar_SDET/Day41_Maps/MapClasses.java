@@ -12,7 +12,7 @@ public class MapClasses {
         //map1.put("Daniel", 96000); // it takes last one because it is updated
         hashMap.put("Auron", 85000);
         hashMap.put("Chris", null);
-        hashMap.put("Hakan", null);
+        hashMap.put("Hakan", null);     // { null, 99999, Emily=1000, Chris=null, Auron=85000, Daniel=95000, Hakan=null}
         hashMap.put(null, 99000);
         hashMap.put(null, 77777);
         hashMap.put(null, 99999); // accepts one null key and picks last null and value

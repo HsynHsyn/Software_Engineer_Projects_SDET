@@ -1,0 +1,184 @@
+What is HTML
+HTML is a language for describing Web pages.
+▪ HTML stands for HyperText Markup Language.
+▪ HTML is not a programming language; it is a markup language.
+▪ Programming languages have programming logic such as; variables,
+conditions, loops etc.
+▪ A markup language is a computer language that uses tags
+to define elements within a document.
+
+What is a “Markup Language”
+▪ A mark up language is used to control the presentation
+of the data.
+▪ HTML is a mark-up language, and it uses markup tags
+to describe and structurize Web pages
+
+What is a “Markup Language”
+• HTML is often named as the structure, or the skeleton of a WebApp.
+• There used to be no way to share a structured data.
+• For example: I have a text that has:
+• Bolded
+• Italic with some bullet points etc.
+• You couldn’t have shared this text as it is.
+• This is why the HTML was created.
+------------------------------------------------------------------------------
+CSS
+• Cascading Style Sheets
+• Defines the style of existing HTML
+• CSS Cannot be used without HTML
+• You cannot create an element with CSS. You can only give style to an existing element.
+• You give style to HTML using CSS
+• Make it purple with red borders
+• Give the first table a gray border, and yellow background
+• Commonly addressed as the SKIN of HTML ***SKELETON ***.
+• CSS allows you to specify how you want your website to look like.
+
+HTML structure CSS Presentation layer
+
+•CSS does NOT add any more buttons or texts, or any other element to the page.
+• It ONLY styles the existing structure.
+
+------------------------------------------------------------------------------
+JavaScript
+•JavaScript is a scripting language.
+•JavaScript is used to add logic, interactivity, dynamism to a web page
+•Allows your website to actually do things and have behavior.
+• “Do some calculations”
+• “Change color when user clicks to some specific button”
+• “Load new data from a page”
+
+------------------------------------------------------------------------------
+
+What Is A Web Element?
+•Everything you see on a web page is a web element.
+•Basically; every single box, button, text, image, link etc
+you see on a web app is a web element.
+•https://www.google.com
+------------------------------------------------------------------------------
+
+There Are Two Types Of Tags:
+1. Paired tags:
+• Consists of two parts. Opening tag and closing tag.
+• Ex: <div> </div>
+2. Unpaired tags: also known as Self-closing tags
+• Consists of only one part. No closing tag required.
+• <br>
+• <img/>
+------------------------------------------------------------------------------
+
+HOW TO DISPLAY HTML FILES?
+• Web Browsers are basically “HTML Readers.”
+
+------------------------------------------------------------------------------
+Structure Of An Html Page
+<!DOCTYPE html>
+ <HTML>
+
+    <HEAD>
+    </HEAD>
+    <BODY>
+        CONTENT
+    </BODY>
+
+    DOCTYPE DECLARATION
+    • It is an instruction to the web browser about what version of HTML
+    the page is written in.
+    • Doctype in HTML must be at the very top of the document, before
+    all elements.
+    • Doctype declaration is not case-sensitive.
+
+------------------------------------------------------------------------------
+
+<html> </html>
+• <html> tag is the root element of every web application
+• Every other web element must be descendent/child of the html element.
+• Which means, everything must go inside of the html element.
+• It is followed by two other elements.
+• <head></head> and <body></body> tags
+
+Head
+• Head element provides general information about the document, including titles, links and definition
+• Basically everything we don’t see on the page as a user like; font files, JavaScript files, titles etc is put in the
+<head >
+
+Body
+• Body represents the content of an HTML document
+• Basically where we put all of our content and create the structure of the web page.
+<body>
+------------------------------------------------------------------------------
+
+HTML HEADINGS
+• HTML headings are defined with the <h1> </h1>to
+<h6></h6> tags.
+• <h1> is used for main headings
+• <h2> is used for subheadings
+• IF there are further sections under the subheadings then
+the <h3> element is used, and so on
+• Headings are block elements: which means they take
+the whole line.
+------------------------------------------------------------------------------
+
+HTML PARAGRAPHS
+• To create a paragraph, you surround the
+words that make up the paragraph with
+an opening <p> tag and closing </p>
+tag.
+• <p> is also a block element. It takes its
+own line by itself by default.
+------------------------------------------------------------------------------
+
+LINE BREAKS & HORIZONTAL RULES
+• To add a line break inside the middle of a paragraph, use the line break tag
+<br />
+• To create a break between themes, add a horizontal rule between sections
+using the <hr /> tag.
+hr: stands for horizontal ruler.
+------------------------------------------------------------------------------
+BOLD & ITALIC
+• By enclosing words in the
+tags < strong ></ strong >
+we can make characters
+appear bold.
+• By enclosing words in the
+tags <em> and </em> we
+can make characters
+appear italic.
+• By enclosing words in the
+tags <u> and </u> we can
+underline the characters
+
+------------------------------------------------------------------------------
+
+HTML ATTRIBUTES
+• Attributes provide additional information for that specific web element only.
+• They appear in the opening tag of the element and are made up of two parts:
+a name and a value, separated by an equal sign.
+
+------------------------------------------------------------------------------
+
+HTML LISTS
+• There are two types of HTML lists.
+1- Ordered lists are lists where each item in the list is numbered.
+• For example, the list might be a set of steps for a recipe that
+must be performed in order.
+2- Unordered lists are lists that begin with a bullet point, no
+numbers.
+
+ORDERED LISTS
+• The ordered list is created
+with the <ol> element/tag.
+• Each item in the list is placed
+between an opening <li> tag
+and a closing </li> tag.
+• Let’s create an ordered list!
+
+------------------------------------------------------------------------------
+
+Html Images
+• To add an image into the page you
+need to use an <img> element. This is
+a self closing element.
+• It needs to carry the following
+attribute:
+• src : This tells the browser where it can
+find the image file.

@@ -7,7 +7,7 @@ a group of objects as single entity
 
 Collection
 • Collection interface is considered as root interface of collection framework
-• Collection interface defines th  e most common methods which are applicable for any
+• Collection interface defines the most common methods which are applicable for any
 collection object
 
 Method Name Method Name         Method Name

@@ -38,6 +38,13 @@ public class Task3_CommonElements {
 
         System.out.println(commonElements);
 
+        System.out.println("////////////////////////////////////////////////////////////////////");
+        Set<Integer> setA = new LinkedHashSet<>(Arrays.asList(10, 8, 11, 20, 5, 0));
+        Set<Integer> setB = new LinkedHashSet<>(Arrays.asList(30, 0, 20, 40, 50, 10, 60));
+        setA.retainAll(setB);
+        System.out.println(setA);
+
+
     }
 }
 

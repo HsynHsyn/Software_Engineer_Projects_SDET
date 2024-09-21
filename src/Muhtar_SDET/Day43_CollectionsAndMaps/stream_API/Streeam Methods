@@ -1,0 +1,18 @@
+Stream Intermediate Operations
+After calling the stream() function from an Array/Collection to obtain a stream instance,
+ the intermediate operations can be accessed.
+Method	    Method	  Methods
+distinct()	skip()	   limit()
+ map()  	filter()	sorted() peek()
+
+ -------------------------------------------------------------------------------
+
+ Stream Terminal Operations
+
+ The terminal operations can be accessed through the stream instance
+
+ Method Method Methods
+ collect()      toArray()   count()
+ reduce()       findAny()   findAll()
+ forEach()      min()       max()
+ allMatch()     anyMatch()  nonMatch()

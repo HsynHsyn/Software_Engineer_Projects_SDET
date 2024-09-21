@@ -18,4 +18,8 @@ public interface Playable {
 
     //public abstract void play(); public abstract are optional because default
     void play(); // abstract
+
+    public default void method1(){ // it becomes instances method
+
+    }
 }

@@ -7,5 +7,7 @@ public class ProtectedAccessModifier {
 
     protected static void method1(){
 
+
+
     }
 }
