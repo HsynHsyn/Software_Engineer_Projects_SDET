@@ -1,0 +1,10 @@
+Pull request
+New Pull request
+Compare Branch
+View Pull request
+5 .Compare Sevket
+File changes
+Review changes
+Approval
+Confirm Pullrequest
+Merge
