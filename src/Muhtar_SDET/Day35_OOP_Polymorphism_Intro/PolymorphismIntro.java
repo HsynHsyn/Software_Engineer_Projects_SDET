@@ -35,14 +35,14 @@ public class PolymorphismIntro {
 
         //Animal animal = dog; // reference
 
-        Animal animal =  new Dog("Max", "Husky", 'M', "Small","White");
+        Animal animal = new Dog("Max", "Husky", 'M', "Small","White");
         animal.eat();
         animal.drink();
         animal.sleep();
 
         // in polymorphism, it can not be called child class`s own methods
-        // animal.play(); gives an error
-        // animal.bark(); gives an error
+        //animal.play(); //gives an error
+        //animal.bark();// gives an error
 
         System.out.println("------------------------------------------------------");
 

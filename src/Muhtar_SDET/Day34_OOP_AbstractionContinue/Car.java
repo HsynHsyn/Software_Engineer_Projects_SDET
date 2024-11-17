@@ -57,7 +57,7 @@ public abstract class Car {// this class can not have object, can not be instant
         System.out.println("Press the break to stop " + make + " " + model);
     }
 
-    // it can be used default but out of the package classes can not able to access this method
+    // it can be used default but out of the package classes can not able to access this method except subclasses
     protected abstract void start(); // meant to be overridden
 
     // come from object class

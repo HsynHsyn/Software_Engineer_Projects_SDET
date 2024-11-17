@@ -12,7 +12,7 @@ Question : How many method we have after overriding ? one
 - *** Method Overriding implements just in inheritance
 - Depends on the subclasses
 - Constructors can not be overridden why ? (constructor can not be inherited
-- *** overloading creates different method overloading creates same method (just give implementation)
+- *** overloading creates different method Overriding creates same method (just give implementation)
 - *** overloading with in the same class, Overriding in the different class
 
 Method Overriding Rules

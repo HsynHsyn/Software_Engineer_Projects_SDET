@@ -3,7 +3,7 @@ OOP Principles
 • Encapsulation  - hiding data
 • Inheritance    - creating relationship child and parent
 • Abstraction    - hiding the function/implementation details from the user
-• Polymorphism   - the ability of one object to exist to multiple forms
+• Polymorphism   - the ability of one object is to exist to multiple forms
 
             Poly + Morphism (Many Forms)
 • Ability of the objects to take on many forms
@@ -27,6 +27,7 @@ OOP Principles
 
         *** Calling method in polymorphism ***
 • Only the methods/variables in reference type can be called
+    (Değişkenler referans türüne göre çağrılır. Ancak metotlar nesne türüne göre çağrılır (polymorphism).)
 • When we call a method, it will call overridden version from a child class
 • If method is not overridden, it will call parent/super class version
 
