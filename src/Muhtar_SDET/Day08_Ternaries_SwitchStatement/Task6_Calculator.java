@@ -26,6 +26,7 @@ public class Task6_Calculator {
                         System.out.println(mathOperator +" is invalid");
                 }
                 System.out.println("result = " + result);
+
        }
 }
 

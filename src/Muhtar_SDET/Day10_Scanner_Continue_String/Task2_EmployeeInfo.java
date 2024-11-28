@@ -13,7 +13,7 @@ public class Task2_EmployeeInfo {
         byte age =  input.nextByte();
 
         System.out.println("Enter your gender: ");
-        char gender = input.next().charAt(0);
+        char gender = input.next().charAt(0); // next() has extra \n (enter)
 
         input.nextLine();
 

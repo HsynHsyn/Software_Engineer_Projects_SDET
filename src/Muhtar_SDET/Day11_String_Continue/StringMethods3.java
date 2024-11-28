@@ -20,7 +20,7 @@ public class StringMethods3 {
         String str2 = new String("Cydeo");
 
         System.out.println(str1 == str2); //false
-        System.out.println(str1.equals(str2));//true
+        System.out.println(str1.equals(str2));//true // context
 
         //--------------------------------------------------
         //equalsIgnoreCase(str):  checks if two strings are equal without case sensitivity

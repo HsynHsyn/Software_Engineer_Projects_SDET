@@ -3,6 +3,7 @@ package Muhtar_SDET.Day08_Ternaries_SwitchStatement;
 public class Task7_HTTPRequest {
     public static void main(String[] args) {
         int statusCode = 600;
+        String statusCode1 = "x";
 
         String result = "";
 

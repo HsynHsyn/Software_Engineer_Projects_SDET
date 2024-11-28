@@ -36,22 +36,27 @@ public class StringMethods1 {
         String sentence1 =  "Today is sunday, and we have Java Lesson";
         int index1 = sentence1.indexOf("w");
         int index2 = sentence1.indexOf('w');
-        System.out.println(index1);
-        System.out.println(index2);
+        System.out.println("index1 " + index1);
+        System.out.println("index2 " + index2);
 
         String s1 = "I Love Java Programming";
         int firstA = s1.indexOf('a');
         int secondA = s1.indexOf("a ");
+        System.out.println("firstA = " + firstA);
+        System.out.println("secondA = " + secondA);
 
         int secondB = s1.indexOf("a", 11);
         System.out.println(secondB);
-        System.out.println("&&&&&&&&&&&&&&&&&&&&&&&&&");
+        System.out.println("----------------------------------------");
 
         String s2 = "Java Python JavaScript Cydeo Python";
         int a1 = s2.indexOf('a');
         int a2 = s2.indexOf("a Python");
         int a3 = s2.indexOf("avaS");
         int a4 = s2.indexOf("aS");
+        System.out.println("a2 = " + a2);
+        System.out.println("a3 = " + a3);
+        System.out.println("a4 = " + a4);
 
         // ---------------------------------------------------------
 

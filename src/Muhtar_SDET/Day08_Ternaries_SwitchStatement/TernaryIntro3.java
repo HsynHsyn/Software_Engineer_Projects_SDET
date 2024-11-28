@@ -4,6 +4,7 @@ public class TernaryIntro3 {
     public static void main(String[] args) {
 
         int score = 95;
+
         /*String result = "";
 
        if (score >= 0 && score <= 100){ // pre-condition, if the score is valid

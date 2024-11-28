@@ -8,6 +8,7 @@ public class StringMethods2 {
 
         String sentence = "I love Python, Python is the best programming language, and Python is in high demand";
         sentence = sentence.replace("Python", "Java");
+        sentence = sentence.replace("the best", "the worst");
         System.out.println(sentence);
 
         //-------------------------------------------------------------
@@ -30,6 +31,7 @@ public class StringMethods2 {
         sentence3 = sentence3.replace("Java", "Python");
         //sentence3 = sentence3.replaceFirst("Java", "Python");
         sentence3 = sentence3.replaceFirst(", Java", ", Python");
+
 
         //-----------------------------------------------------
         // subString()
@@ -69,7 +71,7 @@ public class StringMethods2 {
 
         String sentence7 = "Today is Sunday, Tomorrow is Monday";
         String tomorrow =  sentence7.substring(sentence7.lastIndexOf(' ') +1 );
-        System.out.println(tomorrow);
+        System.out.println("tomorrow = " + tomorrow);
         //-----------------------------------------------------
 
         String sentence8 = "I study at Cydeo School";
@@ -79,12 +81,16 @@ public class StringMethods2 {
         //-----------------------------------------------------
         //repeat(count): repeats the string for given number of times. returns string
 
-        String str3 = "Python";
+        String str3 = "Python ";
         String result = str3.repeat(10);
+        System.out.println("result = " + result);
         String result2 = str3.concat(" ").repeat(4);
         System.out.println(result2);
         String result1 = (str3 + "\n").repeat(10);
-        System.out.println(result);
+        System.out.println(result1);
+        String x = "Hakan";
+        String xx = x.concat(" " + "\n").repeat(5);
+        System.out.println("xx = " + xx);
         //-----------------------------------------------------
 
     }

@@ -9,6 +9,7 @@ public class Task5_Loans {
         String result = (salary >= 60000 && creditScore >= 650) ? "Loan Approved" : "Loan Denied";
         System.out.println("result = " + result);
 
+
     }
 
 }

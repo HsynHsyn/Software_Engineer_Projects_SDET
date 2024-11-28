@@ -12,6 +12,7 @@ public class TernariesIntro2 {
         } else {
             result = "Zero";
         }
+
         String result2 =  (number > 0) ? "Positive" :(number < 0) ? "Negative" : "Zero";
 
         System.out.println("---------------------------------------*******************");
