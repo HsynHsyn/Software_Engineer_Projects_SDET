@@ -9,12 +9,15 @@ public class Task4_StartsWithX {
         System.out.println("Enter a word: ");
         String word = input.nextLine();
 
+        String result = "";
         if (word.startsWith("x")) {
-            String newWord= word.replaceFirst("x","a");
-            System.out.println(newWord);
+            result= word.replaceFirst("x","a");
+
         }else {
             System.out.println(word + " does not start with x");
         }
+
+        System.out.println("result = " + result);
 
     }
 }
